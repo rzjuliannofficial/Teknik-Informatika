@@ -16,9 +16,9 @@ public class transaksiKafe17 {
         System.out.println("Coklat - Rp.20000");
         System.out.println("Untuk ukuran M+=25% , L+=40%");
         System.out.println();
-        System.out.print("Masukkan menu(lowercase): ");
+        System.out.print("Masukkan menu: ");
         menu = sc.nextLine();
-        System.out.print("Masukkan ukuran cup(S, M, dan L)(lowercase): ");
+        System.out.print("Masukkan ukuran cup(S, M, dan L): ");
         ukuranCup = sc.next().charAt(0);
         System.out.print("Masukkan jumlah: ");
         jumlah = sc.nextInt();
@@ -58,7 +58,7 @@ public class transaksiKafe17 {
                 break;
         }
 
-        diskon = keanggotaan ? 0 : 0.1;
+        diskon = keanggotaan ? 0.1 : 0;
         nominalBayar = totalHarga - (diskon * totalHarga);
 
         System.out.println("Item pembelian: "+jumlah+ " " +menu+ " dengan ukuran cup "+ ukuranCup);
