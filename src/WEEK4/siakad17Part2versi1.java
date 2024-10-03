@@ -1,15 +1,15 @@
 import java.util.Scanner;
-public class siakadPart2 {
+public class siakad17Part2versi1 {
     
 public static void main(String[] args) {
-    
+    //deklarasi scanner
         Scanner sc = new Scanner(System.in);
-    
+    //deklarasi variable
         String nama, nim;
         char kelas;
         byte absen;
         double nilaiKuis, nilaiTugas, nilaiUTS, nilaiUAS, nilaiAkhir;
-    
+    //deklarasi input
         System.out.print("Masukkan nama: ");
         nama = sc.nextLine();
         System.out.print("Masukkan NIM: ");
@@ -27,13 +27,20 @@ public static void main(String[] args) {
         nilaiUTS = sc.nextDouble();
         System.out.print("Masukkan nilai UAS: ");
         nilaiUAS = sc.nextDouble();
-        
+
+    //operator
         nilaiAkhir= (nilaiKuis*0.2)+(nilaiTugas*0.15)+(nilaiUTS*0.3)+(nilaiUAS*0.35);
     
         System.out.println("Nama: " + nama + " NIM: " + nim);
         System.out.println("Kelas: " + kelas + " Absen: " + absen);
         System.out.println("Nilai Akhir: " + nilaiAkhir);
     
+        if (nilaiAkhir > 100) {
+            System.out.println("maaf, input yang anda masuukan lebih dari 100");
+            sc.close();
+            return;
+        }
+
         if (nilaiAkhir>80) {
             System.out.println("Nilai akhir huruf: "+"A");
             System.out.println("Kualifikasi: Sangat Baik");
