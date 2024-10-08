@@ -4,9 +4,10 @@ public class pemilihan2Percobaan2_17 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        String member ;
-        int jumlahBeli, pilihanMenu ,harga;
-        double totalAsli1,totalAsli2,totalBayarAkhir, diskon;
+        String member, metodPembayaran ;
+        int jumlahBeli, pilihanMenu ,harga, qris=1000;
+        double total=0,totalAkhir, diskon;
+        
 
         
 
@@ -24,8 +25,11 @@ public class pemilihan2Percobaan2_17 {
         System.out.print("masukkan angka dari menu yang dipilih = ");
         pilihanMenu = sc.nextInt();
         sc.nextLine();
+        
         System.out.print("Apakah Member?(y/n) = ");
         member = sc.nextLine();
+        System.out.print("Pembayaran QRIS(y/n): ");
+        metodPembayaran = sc.nextLine();
         System.out.print("Jumlah pesanan anda = ");
         jumlahBeli = sc.nextInt();
         System.out.println("----------------------------------------");
@@ -60,12 +64,12 @@ public class pemilihan2Percobaan2_17 {
             }
             
         
-            totalAsli1 = harga * jumlahBeli;
-            System.out.println("Total bayar anda = "+totalAsli1);
+            total= harga * jumlahBeli;
+            System.out.println("Total bayar anda = "+total);
             //menghitung total setelah diskon
             //jadi meskipun harga*diskon*jumlahbeli ==totalAsli*diskon
-             totalBayarAkhir= totalAsli1 - (totalAsli1 *diskon);
-            System.out.println("Total bayar setelah diskon = "+totalBayarAkhir);
+             total= total- (total*diskon);
+            System.out.println("Total bayar setelah diskon = "+total);
         }
         //equalsIgnoreCase() membandingkan string tanpa kasus sensitif, artinya ia tidak membedakan antara huruf besar dan kecil
         else if (member.equalsIgnoreCase("n")) {
@@ -92,9 +96,22 @@ public class pemilihan2Percobaan2_17 {
                 sc.close();
                 return;
             }
-            totalAsli2=harga*jumlahBeli;
-            System.out.println("Total bayar = "+totalAsli2);
+            total=harga*jumlahBeli;
+            System.out.println("Total bayar = "+total);
          }
+        
+
+         if (metodPembayaran.equalsIgnoreCase("y")) {
+            System.out.println("tambahan pembayaran QRIS");
+            qris = 1000;
+           total=total+1000;
+           System.out.println("total bayar setelah tambahan qris:  "+total);
+         }
+         else {
+            System.out.println("Tidak ada tambahan");
+         }
+         
+         
          System.out.println("-------------------------------------------");
         sc.close();
 
