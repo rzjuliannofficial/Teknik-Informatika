@@ -22,9 +22,9 @@ public class perulanganDOWHILE_KAFE17 {
             totalHarga =  (kopi*hargaKopi)+(teh*hargaTeh)+(roti*hargaRoti);
             System.out.println("Total harga yang harus dibayarkan :Rp "+totalHarga);
            
-            sc.nextLine();//sc.nextLine(); setelah print totalHarga merupakan sintaks untuk membersihkan newline dari buffer
+            sc.nextLine();//sc.nextLine(); setelah print totalHarga merupakan sintaks untuk membersihkan newline dari buffer.
         }while (true);
-        
+
         System.out.println("Transaksi Selesai.");
         sc.close();
     }

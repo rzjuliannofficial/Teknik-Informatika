@@ -16,7 +16,7 @@ public class perulanganWHILE_SIAKAD17{
             if (nilai<0 || nilai >100) {
                 System.out.println("Nilai tidak valid. Masukkan lagi nilai yang valid");
                 continue;//untuk  melompati perulangan saat nilai tidak valid. 
-                //jika tidak ada ini maka akan berlanjut ke pengondisian/akan masuk nilai "else"
+                //jika tidak ada ini maka akan berlanjut ke pengondisian/akan masuk nilai "else".
             }
             
             if (nilai >80 && nilai <=100) {

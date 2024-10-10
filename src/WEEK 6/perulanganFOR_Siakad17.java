@@ -13,7 +13,7 @@ public class perulanganFOR_Siakad17 {
 
         //for cocok untuk perulangan yang sudah diketahui jumlahnya
 
-        for (int i = 0; i <= 2; i++) { // Loop dari 1 sampai 10
+        for (int i = 0; i <= 2; i++) { // Loop dari 1 sampai 10.
            System.out.print("Masukkan nilai mahasiswa ke-"+ i +": "); 
            nilai = sc.nextDouble();
 
