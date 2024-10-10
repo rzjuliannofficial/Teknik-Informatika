@@ -6,6 +6,7 @@ public class perulanganDOWHILE_KAFE17 {
         int kopi, teh, roti, hargaKopi=12000, hargaTeh=7000, hargaRoti=20000,totalHarga;
         String namaPelanggan ;
         
+        //cocok  untuk perulangan yang tidak tau jumlahnya berapa kali mengulang
         do{
             System.out.print("Masukkan nama pelanggan (ketik 'batal' untuk keluar): ");
             namaPelanggan=sc.nextLine();
@@ -23,7 +24,7 @@ public class perulanganDOWHILE_KAFE17 {
             System.out.println("Total harga yang harus dibayarkan :Rp "+totalHarga);
            
             sc.nextLine();//sc.nextLine(); setelah print totalHarga merupakan sintaks untuk membersihkan newline dari buffer.
-        }while (true);
+        }while (false);
 
         System.out.println("Transaksi Selesai.");
         sc.close();
