@@ -24,7 +24,7 @@ public class ClassTimeCalculator {
         int classMinute = scanner.nextInt();
         
         // Display class start time
-        System.out.printf("jam kuliah anda dimulai : %02d:%02d\n", classHour, classMinute);
+        System.out.println("jam kuliah anda dimulai : "+ classHour+":"+ classMinute);
         
         // Calculate time difference
         int totalCurrentMinutes = currentHour * 60 + currentMinute;
@@ -32,7 +32,7 @@ public class ClassTimeCalculator {
         
         int jam = totalClassMinutes-totalCurrentMinutes;
         int jamTotal = jam/60 ; 
-        int menitTotal = jam %60;
+        int menitTotal = jam %60; //modulus
         System.out.println("sisa waktumu : " +jamTotal +"jam"+menitTotal+"menit");
         
         
