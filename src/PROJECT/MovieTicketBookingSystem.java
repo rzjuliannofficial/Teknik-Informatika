@@ -78,8 +78,8 @@ public class MovieTicketBookingSystem {
         System.out.println("  A  |  B  |  C  |  D  |  E");
         System.out.println("  ---|----|----|----|----");
         System.out.println("1 | " + availableSeats[0][0] + " | " + availableSeats[0][1] + " | " + availableSeats[0][2] + " | " + availableSeats[0][3] + " | " + availableSeats[0][4]);
-System.out.println("2 | " + availableSeats[1][0] + " | " + availableSeats[1][1] + " | " + availableSeats[1][2] + " | " + availableSeats[1][3] + " | " + availableSeats[1][4]);
-System.out.println("3 | " + availableSeats[2][0] + " | " + availableSeats[2][1] + " | " + availableSeats[2][2] + " | " + availableSeats[2][3] + " | " + availableSeats[2][4]);
+        System.out.println("2 | " + availableSeats[1][0] + " | " + availableSeats[1][1] + " | " + availableSeats[1][2] + " | " + availableSeats[1][3] + " | " + availableSeats[1][4]);
+        System.out.println("3 | " + availableSeats[2][0] + " | " + availableSeats[2][1] + " | " + availableSeats[2][2] + " | " + availableSeats[2][3] + " | " + availableSeats[2][4]);
 
         System.out.print("Enter the seat row (1-3): ");
         seatRow = scanner.nextInt();

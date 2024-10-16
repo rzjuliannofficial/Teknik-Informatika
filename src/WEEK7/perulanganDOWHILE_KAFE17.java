@@ -24,7 +24,7 @@ public class perulanganDOWHILE_KAFE17 {
             System.out.println("Total harga yang harus dibayarkan :Rp "+totalHarga);
            
             sc.nextLine();//sc.nextLine(); setelah print totalHarga merupakan sintaks untuk membersihkan newline dari buffer.
-        }while (false);
+        }while (false); //perbedaan false dan false adalah jika false maka tidak ada perulangan, jika true akan melanjutkan perulangan
 
         System.out.println("Transaksi Selesai.");
         sc.close();

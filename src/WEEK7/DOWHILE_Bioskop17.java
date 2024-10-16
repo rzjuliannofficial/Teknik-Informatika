@@ -4,8 +4,8 @@ public class DOWHILE_Bioskop17 {
         Scanner sc = new Scanner(System.in);
 
         String namaPelanggan;
-        int hargaTiket=50000, tiket;
-        double diskon=0,totalHarga;
+        int hargaTiket=50000, tiket, tiketTerjual=0;
+        double diskon=0,totalHarga, pendapatan=0;
 
         //DO WHILE dibawah ini logic untuk pembelian
 
@@ -36,8 +36,15 @@ public class DOWHILE_Bioskop17 {
             System.out.println("Total harga yang harus dibayarkan :Rp "+totalHarga);
             sc.nextLine();
 
-        } while (true);
+            pendapatan += totalHarga;
+            tiketTerjual += tiket;
+
+        } while (true);//perbedaan false dan false adalah jika false maka tidak ada perulangan, jika true akan melanjutkan perulangan
         
+        System.out.println("Tiket yang terjual : "+tiketTerjual);
+        System.out.println("Pendapatan  dari  penjualan tiket bioskop : Rp "+pendapatan);
+        
+
         sc.close();
     }
 }
