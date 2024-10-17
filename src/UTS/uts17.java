@@ -38,7 +38,7 @@ public static void main(String[] args) {
 
         
 
-        if (aksi>1 && aksi<=2) {
+        if (aksi==2) {
             if (banyakSpesial<1) {
                 System.out.println("WARNING! Serangan Spesial anda telah habis");
                 System.out.println("");
@@ -63,7 +63,7 @@ public static void main(String[] args) {
        i++;
        System.out.println("");
     }
-    System.out.println("Selamat Anda telah memengalahkan Villain");
+    System.out.println("Selamat Anda telah memengalahkan Villain.");
     sc.close();
     }
 }

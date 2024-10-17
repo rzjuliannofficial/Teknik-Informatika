@@ -6,7 +6,7 @@ public class pemilihanHari17 {
 
     String dayName, dayType; 
 
-    System.out.print("Input hari(dalam bahasa inggris(kecil)): ");
+    System.out.print("Input hari(dalam bahasa inggris): ");
     dayName = sc.nextLine();
 
     switch (dayName.toLowerCase()) {
