@@ -8,7 +8,6 @@ public static void main(String[] args) {
 
     int i=1,aksi=0, energiHero = 100, energiVillain = 150;
     int energiSeranganNormalkeVill = 15 ,energiSeranganNormalHero = 5 ;
-    int energiSisaHero=0, energiSisaVillain=0;
     int energiSpesialVill=30, energiSpesialHero=20, banyakSpesial=2;
     
     System.out.println("--NILAI AWAL--");
