@@ -23,10 +23,10 @@ public static void main(String[] args) {
         System.out.println("Energi Villain: "+energiVillain);
         System.out.println("Serangan Spesial Tersisa: "+banyakSpesial);
         System.out.println("--------------------------------");
-        System.out.print("Pilih Aksi :");
-        aksi=sc.nextInt();
         System.out.println("1. Serangan Normal(-5 energi + -15 energi Villain, bisa ada penyerangan kritis)");
         System.out.println("2. Serangan Spesial(-20 energi + -30 energi Villain,  bisa ada penyerangan kritis)");
+        System.out.print("Pilih Aksi :");
+        aksi=sc.nextInt();
         System.out.println("Pilihan anda : "+aksi);
         
         
@@ -35,8 +35,6 @@ public static void main(String[] args) {
             System.out.println("Maaf input yang anda masukkan invalid. Mohon masukkan input dengan benar");
             continue;
         }
-
-        
 
         if (aksi==2) {
             if (banyakSpesial<1) {
