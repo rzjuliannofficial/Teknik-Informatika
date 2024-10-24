@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MovieTicketBookingSystem {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // Initialize variables
         String movieName;
@@ -126,5 +126,6 @@ if (seatRow >= 1 && seatRow <= 3 && seatColumn >= 0 && seatColumn <= 4) {
         System.out.println("Seat location: Row " + seatRow + ", Column " + seatColumnChar);
         System.out.println("Total price: Rp " + totalPrice);
         System.out.println("TERIMA KASIH");
+        sc.close();
     }
 }

@@ -9,7 +9,7 @@ public class tugas3_MateriDaspro_kuadrat {
         for (int i = 1; i <=n  ; i++) {
             hasil = i *i;
            
-            System.out.println("Kuadrat dari "+i+" adalah "+hasil);
+        System.out.println("Kuadrat dari "+i+" adalah "+hasil);
         }
        
         sc.close();
