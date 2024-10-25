@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MovieTicketBookingSystem {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Initialize variables
         String movieName;
@@ -35,7 +35,8 @@ public class MovieTicketBookingSystem {
             movieName = "Frozen 2";
         } else {
             System.out.println("Invalid choice. Please try again.");
-            return;
+            scanner.close();
+            return; 
         }
 
         // Get number of tickets
@@ -70,7 +71,9 @@ public class MovieTicketBookingSystem {
             totalPrice += numTickets * 20000;
         } else {
             System.out.println("Invalid choice. Please try again.");
+            scanner.close();
             return;
+            
         }
 
         // Display seat layout
@@ -126,6 +129,6 @@ if (seatRow >= 1 && seatRow <= 3 && seatColumn >= 0 && seatColumn <= 4) {
         System.out.println("Seat location: Row " + seatRow + ", Column " + seatColumnChar);
         System.out.println("Total price: Rp " + totalPrice);
         System.out.println("TERIMA KASIH");
-        sc.close();
+        scanner.close();
     }
 }
