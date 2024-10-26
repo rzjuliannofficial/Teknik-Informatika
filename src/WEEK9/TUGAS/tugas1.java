@@ -3,7 +3,7 @@ package WEEK9.TUGAS;
 public class tugas1 {
     public static void main(String[] args) {
         
-    int n = 9;
+    int n = 8;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 
@@ -15,7 +15,7 @@ public class tugas1 {
                                             //untuk cara membaca // jika  j==n-i+1 maka print. jadi akan terbentuk garis diagonal dr kanan atas ke kiri bawah
                 
                 //jika digabungkan 
-                if (i==1 || i==n || j==1 || j==n || i==j || j==n-i +1) {
+                if (i==1 || i==n || j==1 || j==n || i==j || j<=n-i +1 || j>i ) {
                     
                     System.out.print("5 ");
                 }else {
