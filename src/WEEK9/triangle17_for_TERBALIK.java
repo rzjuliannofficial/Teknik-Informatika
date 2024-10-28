@@ -8,14 +8,9 @@ public class triangle17_for_TERBALIK {
 
         System.out.print("Masukkan Nilai N : ");
         int n = sc.nextInt();
-
-        for (int i = 1; i <=n; i++) {
-            for (int j = n; j >= i; j--) { // penjelasan (J => i) : Loop pertama menentukan baris mana yang sedang diproses, 
-                                           // dan setiap kali baris baru dimulai, i bertambah 1. Variabel i tidak berubah selama 
-                                           // eksekusi loop j, sehingga jumlah * yang dicetak di setiap baris dapat dikendalikan 
-                                           // oleh nilai i pada baris tersebut.
-           
-           
+       
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {  
                 System.out.print("*");
             }
             System.out.println();
