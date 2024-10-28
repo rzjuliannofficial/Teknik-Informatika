@@ -5,10 +5,11 @@ public class tugas2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String namaAtlet="",cabor="";
+        String namaAtlet="",cabor="", institusi;
 
         do{
-
+        System.out.print("Masukkan Nama Institusi: ");
+        institusi = sc.nextLine();
         System.out.println("Cabang Olahraga: ");
         System.out.println("1. Badminton");
         System.out.println("2. Tenis Meja");
