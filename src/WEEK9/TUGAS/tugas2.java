@@ -15,7 +15,7 @@ public class tugas2 {
         System.out.println("2. Tenis Meja");
         System.out.println("3. Basket");
         System.out.println("4. Bola Volly");
-        System.out.println("0.  Keluar");
+        System.out.println("0. Keluar");
         System.out.print("Masukkan cabor yang anda pilih(1-4): ");
         int pilihan = sc.nextInt();
         sc.nextLine();
