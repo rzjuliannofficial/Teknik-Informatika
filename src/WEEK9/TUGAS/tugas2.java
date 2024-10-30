@@ -5,7 +5,7 @@ public class tugas2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String namaAtlet="",cabor="", institusi;
+        String namaAtlet, namaAtletTot="",cabor="", institusi, hasilAkhir="";
 
         do{
         System.out.print("Masukkan Nama Institusi: ");
@@ -43,13 +43,15 @@ public class tugas2 {
             for (int j = 1; j <= 5 ; j++) {
                 System.out.print("Nama atlet ke-"+j+": ");
                 namaAtlet = sc.nextLine();
+                namaAtletTot +=  namaAtlet + "\n";
+
             }
-            
-            System.out.println("Terima kasih telah mengisi dengan benar");
-            System.out.println();
+            hasilAkhir += "Institusi: " + institusi + "\nCabang Olahraga: " + cabor + "\nDaftar Atlet:\n" + namaAtletTot;
+            System.out.println(hasilAkhir);
+            System.out.println("Terima kasih institusi "+institusi+" telah terdaftar dalam cabor "+cabor);
+            System.out.println("====================================================");
         }while (true);
 
         sc.close();
     }
 }
-                    
