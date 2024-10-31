@@ -44,11 +44,10 @@ public class tugas2 {
                 System.out.print("Nama atlet ke-"+j+": ");
                 namaAtlet = sc.nextLine();
                 namaAtletTot +=  namaAtlet + "\n";
-
             }
             hasilAkhir += "Institusi: " + institusi + "\nCabang Olahraga: " + cabor + "\nDaftar Atlet:\n" + namaAtletTot;
             System.out.println(hasilAkhir);
-            System.out.println("Terima kasih institusi "+institusi+" telah terdaftar dalam cabor "+cabor);
+            System.out.println("Institusi "+institusi+" telah terdaftar dalam cabor "+cabor);
             System.out.println("====================================================");
         }while (true);
 
