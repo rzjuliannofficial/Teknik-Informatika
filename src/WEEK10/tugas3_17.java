@@ -11,20 +11,22 @@ public class tugas3_17 {
         for (int i = 0; i < menu.length; i++) {
             System.out.println(menu[i]);
         }
-        
+
         System.out.println();
         System.out.print("Masukkan menu yang akan dipesan: ");
-        String key =   sc.nextLine();
+        String key = sc.nextLine();
 
-        boolean found = false;
-        for (String pilihan : menu) {
-          if (pilihan.equalsIgnoreCase(key)) {
-            found = true;
+        String food="";
+        // Mencari makanan menggunakan linear search
+        //for-each loop
+        for (String pilihan : menu) { //pilihan sbg var sementara untuk menampung setiap elemen dari array menu selama iterasi
+          if (pilihan.equalsIgnoreCase(key)) {// Memeriksa kecocokan nama makanan tanpa memedulikan huruf kapital
+            food=pilihan;
           break;
           }
         }
-        if (found) {
-            System.out.println("makanan tersebut tersedia.");
+        if (!food.isEmpty()) {
+            System.out.println("makanan "+food+" tersebut tersedia.");
         } else {
             System.out.println("makanan yang dicari tidak ada di menu.");
         }
