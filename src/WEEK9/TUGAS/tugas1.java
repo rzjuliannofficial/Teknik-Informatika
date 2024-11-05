@@ -15,7 +15,7 @@ public class tugas1 {
                                             //untuk cara membaca // jika  j==n-i+1 maka print. jadi akan terbentuk garis diagonal dr kanan atas ke kiri bawah
                 
                 //jika digabungkan 
-                if (i==1 || i==n || j==1 || j==n || i==j || j<=n-i +1 || j>i ) {
+                if (i==1 || i==n || j==1 || j==n || i==j || j<=n-i +1 || j>i ) { //jika i ==baris 1 maka print
                     
                     System.out.print("5 ");
                 }else {

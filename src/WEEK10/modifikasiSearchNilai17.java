@@ -7,7 +7,7 @@ public class modifikasiSearchNilai17 {
 
         System.out.print("Masukkan banyak nilai yang akan diinput: ");
         bnykInput = sc.nextInt();
-        int[] arrayNilai = new int[bnykInput];
+        int arrayNilai[] = new int[bnykInput];
 
         
         for (int i = 0; i < arrayNilai.length; i++) {
