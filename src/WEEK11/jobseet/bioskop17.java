@@ -26,10 +26,34 @@ public class bioskop17 {
     System.out.println(penonton[2].length);
     System.out.println(penonton[3].length);
     System.out.println();
-    //modifikasi
+    //modifikasi for loop
     for (int i = 0; i < penonton.length; i++) {
         System.out.println("Panjang baris ke-"+(i+1)+": "+penonton[i].length);
     }
+    System.out.println();
 
+    //foreach loop
+    for (String[] barisPenonton : penonton) {
+        System.out.println("Panjang baris: "+barisPenonton.length);
+    }
+    System.out.println("Penonton pada baris ke-3: ");
+    for (int i = 0; i < penonton[2].length; i++) { //jadi biasanya kalau spesifik ada nomer index itu, masuk dalam baris tsb
+        //jadi  kita harus mengetahui panjang baris ke3/ index ke 2 pada array
+        //pembacaan: jika i < penonton index 2 (0 & 1) maka print baris 3 kolom i < length 
+        System.out.println(penonton[2][i]);
+    }
+    //modifikasi perulangan di atas menjadi foreach loop
+    System.out.println();
+    System.out.println("modifikasi perulangan di atas menjadi foreach loop");
+    System.out.println("Penonton pada baris ke-3: ");
+    for (String i : penonton[2]) {
+        System.out.println(i);
+    }
+    System.out.println();
+    //modifikasi line29 unutk menampilkam nama penonton untuk setiap baris
+    System.out.println("modifikasi line29 unutk menampilkam nama penonton untuk setiap baris");
+    for (int i = 0; i < penonton.length; i++) {
+        System.out.println("Penonton pada baris ke-"+(i+1)+": "+String.join(", ",penonton[i]));
+    }
     }   
 }
