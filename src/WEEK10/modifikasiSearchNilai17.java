@@ -1,4 +1,3 @@
-package WEEK10;
 import java.util.Scanner;
 public class modifikasiSearchNilai17 {
         public static void main(String[] args) {

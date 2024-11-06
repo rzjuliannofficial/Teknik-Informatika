@@ -1,5 +1,3 @@
-package WEEK10;
-
 import java.util.Scanner;
 
 public class cobaTUGAS2LAGI {

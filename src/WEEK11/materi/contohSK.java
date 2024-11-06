@@ -1,4 +1,4 @@
-package WEEK11;
+package WEEK11.materi;
 
 import java.util.Scanner;
 
