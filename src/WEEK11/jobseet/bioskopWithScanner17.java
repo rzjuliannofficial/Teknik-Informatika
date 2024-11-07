@@ -8,8 +8,6 @@ public class bioskopWithScanner17 {
         String nama, next="";
         int kolom, baris, pilihan;
         String penonton[][] = new String[4][2];
-        int totalKursi=penonton.length*penonton[0].length; //Jadi, totalKursi akan bernilai 4 * 2 = 8, sesuai dengan jumlah elemen dalam array penonton.
-
       
         while (true) {
             System.out.println("========================");
