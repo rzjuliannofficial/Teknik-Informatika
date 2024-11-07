@@ -33,6 +33,7 @@ public class bioskop17 {
     System.out.println();
 
     //foreach loop
+    System.out.println("Foreach loop");
     for (String[] barisPenonton : penonton) {
         System.out.println("Panjang baris: "+barisPenonton.length);
     }
@@ -52,6 +53,7 @@ public class bioskop17 {
     System.out.println();
     //modifikasi line29 unutk menampilkam nama penonton untuk setiap baris
     System.out.println("modifikasi line29 unutk menampilkam nama penonton untuk setiap baris");
+    //String.join() digunakan untuk menggabungkan elemen-elemen dari suatu array atau collection menjadi satu string
     for (int i = 0; i < penonton.length; i++) {
         System.out.println("Penonton pada baris ke-"+(i+1)+": "+String.join(", ",penonton[i]));
     }

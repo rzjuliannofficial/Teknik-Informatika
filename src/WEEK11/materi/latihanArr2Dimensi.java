@@ -6,7 +6,7 @@ public class latihanArr2Dimensi {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     
-    int array2D[][]= new int[1][6]; 
+    int array2D[][]= new int[10][6]; 
     double rata2NilaiR=0, rata2NilaiP=0;
 
     for (int i = 0; i < array2D.length; i++) {
