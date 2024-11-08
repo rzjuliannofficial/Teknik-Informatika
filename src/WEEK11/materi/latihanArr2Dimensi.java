@@ -34,7 +34,7 @@ public class latihanArr2Dimensi {
     }
     
     //mencari rata2 nilai responden dalam setiap pertanyaan
-    //dibalik j dulu, mengapa?karena yang ditanya i jadi otomatis i yang ada didalam untuk memudahkan
+    //dibalik j dulu, mengapa?karena yang ditanya i jadi otomatis i yang ada didalam ....untuk memudahkan
     for (int j = 0; j < 6.; j++) {
         double totalNilaiP=0;
         for (int i = 0; i < array2D.length; i++) {
