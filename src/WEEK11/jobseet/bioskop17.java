@@ -37,6 +37,9 @@ public class bioskop17 {
     for (String[] barisPenonton : penonton) {
         System.out.println("Panjang baris: "+barisPenonton.length);
     }
+    //menampilkan penonton pada baris ke 3
+    System.out.println();
+    System.out.println("menampilkan penonton pada baris ke 3");
     System.out.println("Penonton pada baris ke-3: ");
     for (int i = 0; i < penonton[2].length; i++) { //jadi biasanya kalau spesifik ada nomer index itu, masuk dalam baris tsb
         //jadi  kita harus mengetahui panjang baris ke3/ index ke 2 pada array

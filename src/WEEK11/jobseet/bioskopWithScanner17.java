@@ -10,6 +10,7 @@ public class bioskopWithScanner17 {
         String penonton[][] = new String[4][2];
       
         while (true) {
+            //input data peserta 
             System.out.println("========================");
             System.out.println("Selamat Datang di Aplikasi Bioskop");
             System.out.println("1. Input data");
@@ -73,6 +74,8 @@ public class bioskopWithScanner17 {
                             tampung[j]=penonton[i][j];
                         }
                     }
+                    //String.join() digunakan untuk menggabungkan elemen-elemen dari suatu array atau collection menjadi satu string
+                    //untuk tampilan array agar kesamping 
                     System.out.println("Penonton pada baris ke-"+(i+1)+": "+String.join(" || ",tampung));
                 }
             } else {
