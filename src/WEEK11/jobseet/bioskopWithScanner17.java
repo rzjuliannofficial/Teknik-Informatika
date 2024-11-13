@@ -44,11 +44,15 @@ public class bioskopWithScanner17 {
                         System.out.println("Kursi tidak tersedia!");
                         continue;
                     }
+
+                    //jadi jika pada array hasilnya tidk sama dengan null, maka di array tsb sdh ada isinya
+                    //jadi sintask ini hanya untuk melihat kondisi dalam array ada isinya apa tidak
                     if(penonton[baris-1][kolom-1] != null){
                         System.out.println("Kursi tersebut sudah terisi oleh penonton lain!");
                         System.out.println("Silakan masukkan kembali baris dan kolom yang kosong.");
                         continue; // Kembali ke awal loop untuk meminta input baris dan kolom kembali
                     }
+                    //selanjutnya jika tidak sama dengan pernyataan kondisi diatas, maka lanjut ke proses masukkan data ke array
                     //menyimpan nama ke array/ kursi yang dipilih
                     penonton[baris - 1][kolom - 1] = nama ;
                     System.out.println("Kursi berhasil dibooking!");
@@ -65,7 +69,8 @@ public class bioskopWithScanner17 {
             } else if (pilihan==2) {
                 System.out.println("Daftar Penonton:");
                 for (int i = 0; i < penonton.length; i++) {
-                    //// Buat array sementara untuk mengganti nilai null dengan "***"
+                    // Buat array1D sementara untuk mengganti nilai null dengan "***"
+
                     String tampung[]= new String[penonton[i].length];
                     for (int j = 0; j < penonton[i].length; j++) {
                         if (penonton[i][j] == null) {
