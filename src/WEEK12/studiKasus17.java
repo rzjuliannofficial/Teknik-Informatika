@@ -96,7 +96,7 @@ public class studiKasus17 {
         } 
         System.out.println();
 
-        //mencari stok terbanyak pada setiap baris
+        //mencari stok terbanyak pada setiap KOTA
         System.out.println("Lokasi dengan stok terbanyak untuk setiap jenis barang:");
         for (int i = 0; i < inventaris.length; i++) {
             int indexMax = 0;
@@ -111,43 +111,5 @@ public class studiKasus17 {
             System.out.println("Jenis barang ke-"+(i+1)+": "+namaBarang[i]+" dengan stok terbanyak di "+namaKota[indexMax]);
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // System.out.println("Tabel Stok Gudang:");
-        // System.out.println();
-        // for (int i = 0; i < namaKota.length; i++) {
-        //     System.out.print("\t\t"+namaKota[i]);
-        // }
-        // System.out.println();
-        // for (int i = 0; i < inventaris.length; i++) {
-        //     System.out.print("Barang "+(i+1)+":\t");
-        //     totalBarang=0;
-        //     for (int j = 0; j < inventaris[i].length; j++) {
-        //         System.out.print(inventaris[i][j]+"\t\t");
-        //         totalBarang += inventaris[i][j];
-        //     }
-        //     System.out.println();
-        // }
-        // System.out.println("Total stok untuk setiap jenis barang:");
-        // for (int i = 0; i < inventaris.length; i++) {
-        //     System.out.print("Jenis barang ke"+(1+i)+": "+totalBarang);
-        
-        // }
-        
-        
     }
 }
