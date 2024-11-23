@@ -1,4 +1,4 @@
-package quiz2;
+package WEEK13;
 import java.util.Scanner;
 
 public class quiz2_17 {
