@@ -77,6 +77,8 @@ public class Quiz17 {
             for (int i = 0; i < donasi.length; i++) {
                 if (donasi[i][j] > donasi[indexMax][j]) {
                     indexMax = i;
+                }else if (donasi[i][j] == donasi[indexMax][j]) {
+                    indexMax = i;
                 }  
             }
             if (indexMax!=0) {
