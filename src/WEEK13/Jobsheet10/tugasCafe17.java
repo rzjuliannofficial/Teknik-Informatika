@@ -2,7 +2,7 @@ package WEEK13.Jobsheet10;
 
 import java.util.Scanner;
 
-public class cafe17 {
+public class tugasCafe17 {
     
     //fungsi input data 
     public static int[][] inputData(int[][] rekapPenjualan, String[] menu) {
@@ -37,22 +37,29 @@ public class cafe17 {
     
     //fungsi  menampilkan Menu yang memiliki penjualan tertinggi
     public static void menuTertinggi(int[][] rekapPenjualan, String[] menu) {
+        double rata2 = 0;
         int tertinggi = 0;
         int totalPerMenu = 0;
         int indexMax = 0;
         System.out.println();
         for (int i = 0; i < menu.length; i++) {
+            rata2 = 0;
             for (int j = 0; j < rekapPenjualan[i].length; j++) {
                 totalPerMenu += rekapPenjualan[i][j];
             }
             if (totalPerMenu > tertinggi) {
                 indexMax = i;
             }
+            rata2 = totalPerMenu / 7;
+            System.out.println();
             System.out.println("Total untuk menu "+menu[i]+" adalah : "+totalPerMenu);
+            System.out.println("Rata- rata "+menu[i]+" adalah : "+rata2);
         }
+        System.out.println();
         System.out.println("Menu yang memiliki penjualan tertinggi adalah : "+menu[indexMax]);
         return ;
     }
+
     //fungsi main
     public static void main(String[] args) {
         String menu[] = {"Kopi", "Teh", "Es Degan", "Roti Bakar", "Gorengan"};
