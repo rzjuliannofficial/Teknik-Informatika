@@ -34,29 +34,38 @@ public class ModifikasiTugasCafe {
         System.out.println();
     }
     
-    //fungsi  menampilkan siswa yang memiliki nilai tertinggi
     public static void nilaiTertinggi(int[][] rekapNilai, String[] siswa) {
-        double rata2 = 0;
+        
         int tertinggi = 0;
-        int totalPerSiswa = 0;
+        int totalPerMenu = 0;
         int indexMax = 0;
         System.out.println();
+        for (int i = 0; i < siswa.length; i++) {
+            for (int j = 0; j < rekapNilai[i].length; j++) {
+                totalPerMenu += rekapNilai[i][j];
+            }
+            if (totalPerMenu > tertinggi) {
+                indexMax = i;
+            }
+        }
+        System.out.println();
+        System.out.println("Siswa yang memiliki nilai tertinggi adalah : "+siswa[indexMax]);
+    }
+    //fungsi menampilkan rata rata penjualan
+    public static void rataRata(int[][] rekapNilai, String[] siswa) {
+        System.out.println();
+        double rata2 = 0;
+        int totalPerSiswa = 0;
         for (int i = 0; i < siswa.length; i++) {
             rata2 = 0;
             for (int j = 0; j < rekapNilai[i].length; j++) {
                 totalPerSiswa += rekapNilai[i][j];
+                rata2= totalPerSiswa/ rekapNilai[i].length;
             }
-            if (totalPerSiswa > tertinggi) {
-                indexMax = i;
-            }
-            rata2 = totalPerSiswa / rekapNilai[i].length;
             System.out.println();
-            System.out.println("Total nilai siswa "+siswa[i]+" adalah : "+totalPerSiswa);
+            System.out.println("Total untuk menu "+siswa[i]+" adalah : "+totalPerSiswa);
             System.out.println("Rata- rata "+siswa[i]+" adalah : "+rata2);
         }
-        System.out.println();
-        System.out.println("Menu yang memiliki penjualan tertinggi adalah : "+siswa[indexMax]);
-    
     }
 
     //fungsi main
@@ -74,8 +83,6 @@ public class ModifikasiTugasCafe {
         inputData(rekapNilai, siswa);
         tabel(rekapNilai, siswa, jumlahPelajaran);
         nilaiTertinggi(rekapNilai, siswa);
-        
-        
         sc.close();
     }
 }

@@ -163,6 +163,8 @@ public class studiKasusBIOSKOP {
                         }
                     }
                 }
+            }else {
+                break;
             }
         }sc.close();
     }
