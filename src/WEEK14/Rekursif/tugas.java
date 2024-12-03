@@ -8,6 +8,11 @@ public class tugas {
             return 0;
         }else {
             return (angka[n-1] + Rekursif(angka, n-1));
+            //angka [n-1] adalah angka ke n
+            //jika dibaca
+            //misal n ={1, 2 , 3 ,4}
+            // angka[4-1] + Rekursif(angka, 4-1)
+            // angka[3-1] + Rekursif(angka, 3-1) dst
         }
     }
     static int Iteratif(int angka[], int n){
