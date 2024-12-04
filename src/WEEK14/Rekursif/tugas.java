@@ -29,9 +29,9 @@ public class tugas {
         int n = sc.nextInt();
         int angka[] = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            System.out.print("Masukkan nilai ke-"+(i+1)+": ");
-            angka[i] = sc.nextInt();
+        for (int i = n; i > 0; i--) {
+            System.out.print("Masukkan nilai ke-"+i+": ");
+            angka[i-1] = sc.nextInt();
         }
         System.out.println("Hasil rekursif: "+ Rekursif(angka, n));
         System.out.println("Hasil Iteratif: "+ Iteratif(angka, n));
