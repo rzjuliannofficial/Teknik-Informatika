@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class kelompok10 {
   static  Scanner input10 = new Scanner(System.in);
   //intansisai array global
-  static String[][] Data = new String[100][100];
   static String[] namaMahasiswa = new String[100]; // membatasi 100 mahasiswa
   static String[] nim = new String[100]; // membatasi 100 nim
   static String[][] namaMk = new String[100][100]; // membatasi 100
@@ -12,7 +11,7 @@ public class kelompok10 {
   static byte [][] sks = new byte[100][100]; 
   static int i = 0 ;
   static int[] totalSks = new int[100];
-  static int jumlahMahasiswa; 
+  static int jumlahMahasiswa;
 
   public static void main(String[] args) {
     Menu();
@@ -96,6 +95,9 @@ public class kelompok10 {
       } 
     }
     System.out.println("Total SKS: "+totalSks[i]);
+    if (totalSks[i]<20) {
+      jumlahMahasiswa++;
+    }
     i++;
   }
 
@@ -105,10 +107,10 @@ public class kelompok10 {
     System.out.print("Masukkan Nim mahasiswa: ");
     String NIM = input10.nextLine();
     System.out.println("Daftar KRS");
-    for (int i = 0; i < Data.length; i++) {
+    for (int i = 0; i < sks.length; i++) {
       if (NIM.equals(nim[i])) {
         System.out.println("Nim ||\t\t|| Nama ||\t|| Kode MK ||\t|| Nama Mata Kuliah ||\t|| SKS");
-        for (int j = 0; j < Data.length; j++) {
+        for (int j = 0; j < nim.length; j++) {
           if (kodeMk[i][j] == null) {
             break;
           }
@@ -125,12 +127,7 @@ public class kelompok10 {
   
 
   public static void menu3() {
-  for (int i = 0; i < Data.length; i++) {
-    if (totalSks[i]<20) {
-      jumlahMahasiswa++;
-      break;
-    }
-  }
   System.out.println("Jumlah mahasiswa yang mengambil SKS kurang dari 20: "+jumlahMahasiswa);
   }
+  
 }
