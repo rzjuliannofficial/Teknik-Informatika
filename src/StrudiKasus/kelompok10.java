@@ -7,10 +7,10 @@ public class kelompok10 {
   static String[] namaMahasiswa = new String[100]; // membatasi 100 mahasiswa
   static String[] nim = new String[100]; // membatasi 100 nim
   static String[][] namaMk = new String[100][100]; // membatasi 100
-  static String[][] kodeMk = new String[100][100]; // membatasi 26 kodematkul
+  static String[][] kodeMk = new String[100][100]; // membatasi 100 kodematkul
   static byte[][] sks = new byte[100][100]; 
   static int[] totalSks = new int[100];
-  static int jumlahMahasiswa;
+  static int jumlahMahasiswa=0;
   static int i = 0 ;
 
   public static void main(String[] args) {
@@ -80,7 +80,7 @@ public class kelompok10 {
               continue; // Kembali ke awal loop
           } else {
               totalSks[i] += sks[i][j];
-              if (totalSks[i]>24) {
+              if (totalSks[i]>=24) {
                 System.out.println("SKS telah melebihi 24");
                 totalSks[i] -= sks[i][j];
                 break;
@@ -114,20 +114,20 @@ public class kelompok10 {
       if (NIM.equals(nim[i])) {
         dataAda = true;
         System.out.println("\nNim \t\t Nama \t Kode MK \t Nama Mata Kuliah SKS");
-        for (int j = 0; j < nim.length; j++) {
+        for (int j = 0; j < sks[i].length; j++) {
           if (kodeMk[i][j] == null) {
             break;
           }
-          System.out.print(nim[i]+"\t"+namaMahasiswa[i]+"\t"+kodeMk[i][j]+"\t\t"+namaMk[i][j]+"\t\t"+sks[i][j]);
+          System.out.print("\n"+nim[i]+"\t"+namaMahasiswa[i]+"\t"+kodeMk[i][j]+"\t\t"+namaMk[i][j]+"\t\t"+sks[i][j]);
         }
         System.out.println();   
         System.out.println("Total SKS: "+totalSks[i]);
         System.out.println();
-        break;
+        break;//agar sistem tidak looping ketika data sudah ditemukan
         }
     }
-      if (!dataAda) { //jadi jika data tidak ada, kondisi dalam if ini akan berjalan
-        System.out.println("Data dengan nim "+NIM+" tidak ditemukan");
+    if (!dataAda) { //jadi jika data tidak ada, kondisi dalam if ini akan berjalan
+      System.out.println("Data dengan nim "+NIM+" tidak ditemukan");
     }
   }
   
