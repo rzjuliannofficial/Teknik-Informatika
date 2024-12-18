@@ -109,8 +109,8 @@ public class UAS1F17 {
             for (int i = 0; i < namaTim.length; i++) {
                 if (totalskor[indexmax] < totalskor[i]) {
                     indexmax = i;
-                }
-                if (totalskor[indexmax]==totalskor[i]) {
+                    System.out.println("Selamat kepada tim "+namaTim[indexmax]+ " telah memenangkan pertandingan");
+                }else if (totalskor[indexmax]==totalskor[i]){
                     if (skor[i][1] > skor[i+1][1]) {
                         indexmax=i;
                         System.out.println("Selamat kepada tim "+namaTim[indexmax]+ " telah memenangkan pertandingan");
