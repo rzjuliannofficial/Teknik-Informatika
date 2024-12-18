@@ -110,15 +110,19 @@ public class UAS1F17 {
                 if (totalskor[indexmax] < totalskor[i]) {
                     indexmax = i;
                     System.out.println("Selamat kepada tim "+namaTim[indexmax]+ " telah memenangkan pertandingan");
+                    break;
                 }else if (totalskor[indexmax]==totalskor[i]){
                     if (skor[i][1] > skor[i+1][1]) {
                         indexmax=i;
                         System.out.println("Selamat kepada tim "+namaTim[indexmax]+ " telah memenangkan pertandingan");
+                        break;
                     }else if (skor[i][1] < skor[i+1][1]) {
                         indexmax = i + 1;
                         System.out.println("Selamat kepada tim "+namaTim[indexmax]+ " telah memenangkan pertandingan");
+                        break;
                     }else {
-                        System.out.println("seri");
+                        System.out.println("seri.");
+                        break;
                     }
                 }
             }
