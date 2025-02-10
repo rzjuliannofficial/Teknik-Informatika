@@ -1,3 +1,4 @@
+package WEEK10;
 public class ArrayTerbalik { 
     public static void main(String[] args) {
         // Membuat array dengan 10 elemen

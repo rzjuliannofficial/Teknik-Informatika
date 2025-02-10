@@ -1,3 +1,4 @@
+package WEEK7;
 import java.util.Scanner;
 public class DOWHILE_Bioskop17 {
     public static void main(String[] args) {

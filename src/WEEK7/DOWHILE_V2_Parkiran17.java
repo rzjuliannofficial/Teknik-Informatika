@@ -1,3 +1,4 @@
+package WEEK7;
 import java.util.Scanner;
 public class DOWHILE_V2_Parkiran17 {
     public static void main(String[] args) {

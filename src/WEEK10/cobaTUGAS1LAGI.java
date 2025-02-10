@@ -1,3 +1,4 @@
+package WEEK10;
 import java.util.Scanner;
 public class cobaTUGAS1LAGI {
 public static void main(String[] args) {

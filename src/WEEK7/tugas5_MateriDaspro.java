@@ -1,3 +1,4 @@
+package WEEK7;
 import java.util.Scanner;
 public class tugas5_MateriDaspro {
     public static void main(String[] args) {

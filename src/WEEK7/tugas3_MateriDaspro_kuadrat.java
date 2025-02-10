@@ -1,3 +1,4 @@
+package WEEK7;
 import java.util.Scanner;
 public class tugas3_MateriDaspro_kuadrat {
     public static void main(String[] args) {

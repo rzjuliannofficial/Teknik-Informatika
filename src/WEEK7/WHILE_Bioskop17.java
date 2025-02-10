@@ -1,3 +1,5 @@
+
+package WEEK7;
 import java.util.Scanner;
 
 public class WHILE_Bioskop17 {

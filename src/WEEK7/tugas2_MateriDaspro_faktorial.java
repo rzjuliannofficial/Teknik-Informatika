@@ -1,3 +1,4 @@
+package WEEK7;
 import java.util.Scanner;
 public class tugas2_MateriDaspro_faktorial  {
     public static void main(String[] args) {

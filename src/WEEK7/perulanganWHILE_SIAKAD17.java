@@ -1,3 +1,4 @@
+package WEEK7;
 import java.util.Scanner;
 public class perulanganWHILE_SIAKAD17{
     public static void main(String[] args) {

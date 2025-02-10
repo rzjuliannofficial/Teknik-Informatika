@@ -1,3 +1,4 @@
+package WEEK7;
 import java.util.Scanner;
 public class tugas8_MateriDaspro_perkaliandenganmemakaiPenambahan{
     public static void main(String[] args) {
