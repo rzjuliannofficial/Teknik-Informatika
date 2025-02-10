@@ -1,3 +1,4 @@
+package WEEK5;
 import java.util.Scanner;
 public class pemilihanHariDenganIf17 {
     public static void main(String[] args) {

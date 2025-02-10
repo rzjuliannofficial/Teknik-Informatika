@@ -1,3 +1,4 @@
+package WEEK6;
 import java.util.Scanner;
 public class latihan_pengecekSuhu {
     public static void main(String[] args) {

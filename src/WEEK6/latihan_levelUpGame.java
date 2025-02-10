@@ -1,3 +1,5 @@
+
+package WEEK6;
 import java.util.Scanner;
 public class latihan_levelUpGame {
     public static void main(String[] args) {

@@ -1,0 +1,15 @@
+Mana yang Lebih Baik?
+1. Jika jumlah perulangan sudah diketahui pasti:
+FOR adalah pilihan yang terbaik. Ini karena lebih mudah dipahami, terstruktur dengan jelas, dan menghindari kesalahan logika. Cocok untuk kasus seperti mengulang sejumlah langkah tertentu.
+
+2. Jika jumlah perulangan tidak diketahui tetapi kondisi berhenti jelas:
+WHILE lebih baik digunakan. Ini cocok untuk kondisi yang mungkin terus berjalan hingga kondisi tertentu tercapai (misalnya, pengguna memasukkan input yang memenuhi kriteria).
+
+3. Jika perlu menjalankan blok kode setidaknya satu kali sebelum kondisi diperiksa:
+DO-WHILE paling sesuai. Ini karena blok kode dijalankan sekali terlepas dari apakah kondisinya terpenuhi atau tidak.
+
+Kesimpulan:
+Tidak ada yang benar-benar "lebih baik" secara universal antara FOR, WHILE, dan DO-WHILE. Pemilihan tergantung pada kebutuhan spesifik program.
+FOR lebih baik untuk kasus dengan iterasi yang sudah diketahui jumlahnya.
+WHILE baik untuk kasus dengan kondisi dinamis yang belum diketahui berapa kali akan diulang.
+DO-WHILE dipilih saat kita harus memastikan setidaknya satu kali eksekusi sebelum kondisi diperiksa.

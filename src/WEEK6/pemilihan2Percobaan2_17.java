@@ -1,3 +1,4 @@
+package WEEK6;
 import java.util.Scanner;
 
 public class pemilihan2Percobaan2_17 {

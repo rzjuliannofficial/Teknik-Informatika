@@ -1,3 +1,4 @@
+package WEEK4.quiz;
 import java.util.Scanner;
 
 public class quiz17 {

@@ -1,3 +1,4 @@
+package WEEK5;
 import java.util.Scanner;
 
 public class Siakad17versi2 {

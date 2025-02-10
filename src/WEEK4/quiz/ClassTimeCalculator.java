@@ -1,7 +1,6 @@
+package WEEK4.quiz;
 
-
-        import java.util.Scanner;
-
+import java.util.Scanner;
 public class ClassTimeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

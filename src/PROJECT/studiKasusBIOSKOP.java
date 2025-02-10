@@ -1,3 +1,4 @@
+package PROJECT;
 import java.util.Scanner;
 
 public class studiKasusBIOSKOP {
