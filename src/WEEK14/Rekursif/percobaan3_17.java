@@ -1,4 +1,4 @@
-package SEMESTER1.WEEK14.Rekursif;
+package WEEK14.Rekursif;
 import java.util.Scanner;
 public class percobaan3_17 {
     static double hitungLaba(double saldo , int lamaInv){
