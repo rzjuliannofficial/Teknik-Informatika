@@ -10,12 +10,14 @@ public class mahasiswaMain17 {
         mhs1.kelas = "TI 1F"; //mengisi nilai atribut kelas
         mhs1.ipk = 3.5 ; //mengisi nilai atribut ipk
         
+        //constructor tanpa parameter
         mhs1.tampilInformasi(); //memanggil method tampilInformasi
         System.out.println(mhs1.nilaiKinerja());
         mhs1.ubahKelas("TI 1E"); //memanggil method ubahKelas
         System.out.println();
-        System.out.println("Update");
+
         //update
+        System.out.println("Update");
         mhs1.updateIPK(5); //memanggil method updateIPK
         mhs1.tampilInformasi();
         System.out.println();
