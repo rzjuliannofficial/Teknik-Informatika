@@ -1,10 +1,10 @@
-package WEEK2;
+package WEEK2.classHape;
 public class hape {
 
 
     String merk;
     String tipe;
-    float ukuranLayar;
+    float ukuranLayar; //ini buat 
     int harga;
 
         public hape(String mr, String tp, float ukuran) { 

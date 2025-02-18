@@ -1,4 +1,4 @@
-package WEEK2;
+package WEEK2.classHape;
 public class hapemain {
     public static void main(String[] args) {
         // hape phone = new hape(null, null, 0);
