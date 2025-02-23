@@ -13,6 +13,7 @@ public class mataKuliahMain17 {
         mk1.tambahJam(2);
         mk1.tampilInformasi();
         System.out.println();
+        
         System.out.println("Update v2");
         mk1.kurangiJam(5);
         mk1.tampilInformasi();
