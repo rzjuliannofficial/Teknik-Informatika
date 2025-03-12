@@ -11,6 +11,8 @@ public class mahasiswaMain17 {
         mhs1.ipk = 3.5 ; //mengisi nilai atribut ipk
         
         //constructor tanpa parameter
+        //OBJECT 1
+        // NamaClass namaObjek = new NamaClass();
         mhs1.tampilInformasi(); //memanggil method tampilInformasi
         System.out.println(mhs1.nilaiKinerja());
         mhs1.ubahKelas("TI 1E"); //memanggil method ubahKelas
@@ -23,6 +25,8 @@ public class mahasiswaMain17 {
         System.out.println();
         
         //constructor dengan parameter
+        //OBJECT 2
+        // NamaClass namaObjek = new NamaClass(parameter);
         mahasiswa17 mhs2 = new mahasiswa17("YULI", "2341720255", "TI 1F", 3.5);
         mhs2.updateIPK(3.34);
         mhs2.tampilInformasi();
