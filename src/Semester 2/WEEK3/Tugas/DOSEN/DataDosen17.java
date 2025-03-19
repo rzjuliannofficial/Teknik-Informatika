@@ -40,6 +40,7 @@ public class DataDosen17 {
                 totalUsiaWanita+=arrDosen[i].usia;
             }
         }
+        
         rata2Pria = totalUsiaPria / pria ;
         rata2Wanita = totalUsiaWanita / wanita;
         System.out.println("Rata-rata Usia Dosen Per Jenis Kelamin");

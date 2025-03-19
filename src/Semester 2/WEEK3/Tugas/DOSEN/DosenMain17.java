@@ -11,7 +11,7 @@ public class DosenMain17 {
         
         Dosen17[] arrDosen = new Dosen17[jumlahData]; //deklarasi array of object
         String kode, nama;
-        boolean jk = false ;
+        boolean jk;
         int usia;
 
         for (int i = 0; i < arrDosen.length;i++) {
