@@ -9,7 +9,7 @@ public class mahasiswa17 {
 
     }
     
-    //konstruktor menggunakan public agar bisa di akses beda folder/ package
+    //konstruktor menggunakan public agar bisa di akses beda folder/ package , karena aku ingin menggunakan pada file modifikasi
     //konstruktor berparameter
     public mahasiswa17(String nama, String nim, String kelas , double ipk){
         this.nim = nim;

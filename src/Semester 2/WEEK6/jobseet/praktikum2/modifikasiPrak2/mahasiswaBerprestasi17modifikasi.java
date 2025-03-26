@@ -50,7 +50,7 @@ public class mahasiswaBerprestasi17modifikasi {
         for (int i = 1; i < arr.length; i++) {
             mahasiswa17 temp = arr[i];
             int j = i;
-            while (j>0 && arr[j-1].ipk>temp.ipk) {
+            while (j>=0 && arr[j-1].ipk>temp.ipk) {
                 arr[j]=arr[j-1];
                 j--;
             }

@@ -76,16 +76,20 @@ public class sorting17 {
 
     void insertionSortDESC(){
         for (int i = 1; i < jumData; i++) {
-            int temp = data[i];
+            int temp = data[i]; // int temp dapat digunakan karena masih dalam 1 kesatuan, karena isinya int 
             int j=i-1;
             //data[j]=data[0], kalau dari perulangan 1, temp bervalue indeks 1
-            while (j>=0 && data[j] < temp) { //menggunakan j>=0 agar j==0 juga diperiksa
+            while (j>=0 && data[j] < temp) { //menggunakan j>=0 agar j==0 juga diperiksa .kondisi ini memastikan loop berjalan, jadi jika tidak sama , maka loop akan berhenti
+                
                 data[j+1] = data[j]; //value indeks 0 bergeser ke 1
                 j--; //untuk keluar dari while, sekaran j=-1,
                         //jadi ,misal indeks i nya sudah puluhan, ya di ulang sampai j>=0
             }
+            
             //while tadi mengakibatkan indeks 0 dan 1 bervalue sama
             //jadi masukkan temp ke indeks seharusnya / swap
+
+            System.out.println("j setelah while perulangan "+(i)+ ": "+j); //ini dapat membuktikan
             data[j+1] = temp; //j+1 karena j tadi sudah menjadi -1
         }
     }
