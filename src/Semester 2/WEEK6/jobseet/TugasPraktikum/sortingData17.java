@@ -1,4 +1,4 @@
-package WEEK6.jobseet.latihanPraktikum;
+package WEEK6.jobseet.TugasPraktikum;
 
 public class sortingData17 {
     

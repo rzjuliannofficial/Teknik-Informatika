@@ -1,4 +1,4 @@
-package WEEK6.jobseet.latihanPraktikum;
+package WEEK6.jobseet.TugasPraktikum;
 import java.util.Scanner;
 
 public class dosen17Main_nextW3 {

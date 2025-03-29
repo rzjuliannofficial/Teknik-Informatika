@@ -2,7 +2,7 @@ package WEEK6.jobseet.praktikum2;
 
 public class mahasiswa17 {
     String nama, nim , kelas;
-     public double ipk;
+     public double ipk; //variabel ipk di set public agar bisa di akses dari luar class
 
     //konstruktor default
     mahasiswa17(){

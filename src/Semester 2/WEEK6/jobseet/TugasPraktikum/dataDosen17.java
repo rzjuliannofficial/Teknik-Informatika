@@ -1,4 +1,4 @@
-package WEEK6.jobseet.latihanPraktikum;
+package WEEK6.jobseet.TugasPraktikum;
 
 public class dataDosen17 {
     int pria = 0, wanita = 0;
@@ -41,9 +41,20 @@ public class dataDosen17 {
                 totalUsiaWanita+=arrDosen[i].usia;
             }
         }
+
+        //check jika pria atau wanita tidak ada
+        if (pria == 0) {
+            rata2Pria = 0;
+            rata2Wanita = totalUsiaWanita / wanita;
+            
+        }else if (wanita == 0) {
+            rata2Pria = totalUsiaPria / pria;
+            rata2Wanita = 0;
+        }else {
+            rata2Pria = totalUsiaPria / pria;
+            rata2Wanita = totalUsiaWanita / wanita;
+        }
         
-        rata2Pria = totalUsiaPria / pria ;
-        rata2Wanita = totalUsiaWanita / wanita;
         System.out.println("Rata-rata Usia Dosen Per Jenis Kelamin");
         System.out.println("Pria: "+rata2Pria);
         System.out.println("Wanita: "+rata2Wanita);
