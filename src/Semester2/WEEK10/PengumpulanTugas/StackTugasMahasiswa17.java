@@ -33,6 +33,7 @@ public class StackTugasMahasiswa17 {
         if (!isFull()) {
             top++; // Menambah indeks top
             stack[top] = mhs; // Menambahkan mahasiswa ke stack
+            System.out.printf("Tugas %s telah berhasil dikumpulkan.\n", mhs.nama);
         } else {
             System.out.println("Stack penuh, tidak bisa menambah tugas lagi.");
         }
@@ -67,7 +68,7 @@ public class StackTugasMahasiswa17 {
         // }  
 
         //Stack    //menampilkan secara DESCENDING,
-        for (int i = top; i <= 0; i--) {
+        for (int i = top; i >= 0; i--) {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas );
         }
         System.out.println();

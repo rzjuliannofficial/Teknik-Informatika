@@ -26,7 +26,7 @@ public class Mahasiswa17Main {
                     String kelas = scan.nextLine();
                     Mahasiswa17 mhs = new Mahasiswa17(nama, nim, kelas); //buat objek mahasiswa baru
                     stack.push(mhs); //masukkan objek mahasiswa ke stack
-                    System.out.printf("Tugas %s telah berhasil dikumpulkan.\n", mhs.nama); //%s// format untuk menampilkan string
+                    //System.out.printf("Tugas %s telah berhasil dikumpulkan.\n", mhs.nama); //%s// format untuk menampilkan string
                     System.out.println();
                     break;
 
