@@ -72,8 +72,12 @@ public class StackTugasMahasiswa17 {
         }
     }
 
-    public int count() {
+    public int tugasTerkumpulkan() {
         return done; // Mengembalikan jumlah tugas yang sudah dikumpulkan
+    }
+
+    public int tugasBelumDinilai() {
+        return top + 1; // Mengembalikan jumlah tugas yang belum dinilai
     }
 
     public void print(){
@@ -88,4 +92,20 @@ public class StackTugasMahasiswa17 {
         }
         System.out.println();
     }
+
+
+    public String konversiDesimalKeBiner(int nilai){
+        StackKonversi17 stackKonversi = new StackKonversi17(); //inisialisasi objek stackKonversi menggunakan class StackKonversi17
+        while (nilai > 0) { 
+            int sisa = nilai % 2; //sisa bagi 2
+            stackKonversi.push(sisa); //push ke stack
+            nilai = nilai / 2; //nilai dibagi 2
+        }
+        String biner = new String();
+        while (!stackKonversi.isEmpty()) {
+            biner += stackKonversi.pop(); //pop dari stack
+        }
+        return biner;
+    }
+
 }

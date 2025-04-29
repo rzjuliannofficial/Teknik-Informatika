@@ -14,7 +14,8 @@ public class Mahasiswa17Main {
             System.out.println("3. Melihat Tugas Teratas(terbaru)");
             System.out.println("4. Melihat Tugas Terbawah(terlama)");
             System.out.println("5. Melihat Daftar Tugas");
-            System.out.println("6. Menghitung Jumlah Tugas yang telah dikumpulkan");
+            System.out.println("6. Menghitung Jumlah Tugas yang sudah dikumpulkan");
+            System.out.println("7. Menghitung Jumlah Tugas yang belum dinilai");
             System.out.println("0. Keluar");
 
             System.out.print("Pilih Menu: ");
@@ -42,6 +43,8 @@ public class Mahasiswa17Main {
                         int nilai = scan.nextInt();
                         dinilai.tugasDinilai(nilai); //menetapkan nilai pada objek mahasiswa
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai); //%d// format untuk menampilkan integer
+                        String biner = stack.konversiDesimalKeBiner(nilai); //mengkonversi nilai ke biner
+                        System.out.println("Nilai Biner Tugas: "+biner);
                     }
                     System.out.println();
                     break;
@@ -70,7 +73,12 @@ public class Mahasiswa17Main {
                 
                 case 6:
                     
-                    System.out.println("Jumlah Tugas yang telah dikumpulkan: " + stack.count()); //
+                    System.out.println("Jumlah Tugas yang telah dikumpulkan: " + stack.tugasTerkumpulkan()); //jadi akan selalu bertambah sesuai dengan jumlah mahasiswa yang sudah mengumpulkan tugas
+                    System.out.println();
+                    break;
+
+                case 7:
+                    System.out.println("Jumlah Tugas yang belum dinilai: " + stack.tugasBelumDinilai()); //jadi akan berkurang seiring kita menilai tugas
                     System.out.println();
                     break;
 
