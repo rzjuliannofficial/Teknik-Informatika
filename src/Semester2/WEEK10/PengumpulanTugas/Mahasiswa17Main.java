@@ -11,8 +11,12 @@ public class Mahasiswa17Main {
             System.out.println("=== Menu ===");
             System.out.println("1. Mengumpulkan Tugas");
             System.out.println("2. Menilai Tugas");
-            System.out.println("3 Menelihat Tugas Teratas");
-            System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("3. Melihat Tugas Teratas(terbaru)");
+            System.out.println("4. Melihat Tugas Terbawah(terlama)");
+            System.out.println("5. Melihat Daftar Tugas");
+            System.out.println("6. Menghitung Jumlah Tugas yang telah dikumpulkan");
+            System.out.println("0. Keluar");
+
             System.out.print("Pilih Menu: ");
             pilih = scan.nextInt();
             scan.nextLine(); 
@@ -49,19 +53,37 @@ public class Mahasiswa17Main {
                     }
                     System.out.println();
                     break;
-
+                
                 case 4:
+                    Mahasiswa17 lihatBottom = stack.peekBottom(); //mengambil objek mahasiswa dari stack
+                    if (lihatBottom != null) {
+                        System.out.println("Tugas Pertama dikumpulkan oleh: " + lihatBottom.nama );
+                    }
+                    System.out.println();
+                    break;
+
+                case 5:
                     System.out.println("Daftar Semua Tugas");
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print(); //menampilkan semua objek mahasiswa dalam stack
                     break;
                 
+                case 6:
+                    
+                    System.out.println("Jumlah Tugas yang telah dikumpulkan: " + stack.count()); //
+                    System.out.println();
+                    break;
+
+                case 0:
+                    System.out.println("Keluar dari program.");
+                    break;
+
                 default:
                     System.out.println("Pilihan tidak valid. Silakan coba lagi.");
                     System.out.println();
                     break;
             }
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih !=0);
         scan.close();
     }
 }

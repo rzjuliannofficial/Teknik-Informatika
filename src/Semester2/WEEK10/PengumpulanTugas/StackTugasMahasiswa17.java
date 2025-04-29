@@ -3,8 +3,9 @@ package WEEK10.PengumpulanTugas;
 public class StackTugasMahasiswa17 {
     
     Mahasiswa17[] stack;
-    int top;
+    int top; //indeks top dari stack
     int size;
+    int done;
 
     // Constructor untuk inisialisasi stack
     public StackTugasMahasiswa17(int size) {
@@ -32,13 +33,14 @@ public class StackTugasMahasiswa17 {
     public void push(Mahasiswa17 mhs) {
         if (!isFull()) {
             top++; // Menambah indeks top
-            stack[top] = mhs; // Menambahkan mahasiswa ke stack
+            stack[top] = mhs; // Menambahkan mahasiswa ke stack;
             System.out.printf("Tugas %s telah berhasil dikumpulkan.\n", mhs.nama);
+            done++;
         } else {
             System.out.println("Stack penuh, tidak bisa menambah tugas lagi.");
         }
     }
-
+    
     public Mahasiswa17 pop() {
         if (!isEmpty()) { //!isEmpty()) , jadi jika hasil isEmpty() false, if akan di negasi , = true
                           //jika hasilnya false maka tidak masuk if
@@ -59,6 +61,19 @@ public class StackTugasMahasiswa17 {
             System.out.println("Stack kosong, tidak ada tugas yang bisa dilihat.");
             return null; // Tidak ada mahasiswa yang bisa dilihat
         }
+    }
+
+    public Mahasiswa17 peekBottom() {
+        if (!isEmpty()) {
+            return stack[0]; // Mengembalikan mahasiswa di posisi terbawah
+        } else {
+            System.out.println("Stack kosong, tidak ada tugas yang bisa dilihat.");
+            return null;
+        }
+    }
+
+    public int count() {
+        return done; // Mengembalikan jumlah tugas yang sudah dikumpulkan
     }
 
     public void print(){
