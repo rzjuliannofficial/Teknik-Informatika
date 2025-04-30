@@ -43,6 +43,7 @@ public class Mahasiswa17Main {
                         int nilai = scan.nextInt();
                         dinilai.tugasDinilai(nilai); //menetapkan nilai pada objek mahasiswa
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai); //%d// format untuk menampilkan integer
+                        //konversi nilai to biner
                         String biner = stack.konversiDesimalKeBiner(nilai); //mengkonversi nilai ke biner
                         System.out.println("Nilai Biner Tugas: "+biner);
                     }

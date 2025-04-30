@@ -2,6 +2,10 @@ package WEEK10.PengumpulanTugas;
 
 public class Mahasiswa17 {
     
+    //disclaimer
+    //Catatan: Tipe data pada variabel stack menyesuaikan dengan data yang akan disimpan di dalam Stack. 
+            //Pada percobaan ini, data yang akan disimpan merupakan array of object dari Mahasiswa,
+            //sehingga tipe data yang digunakan adalah Mahasiswa.
     String nama;
     String nim;
     String kelas;

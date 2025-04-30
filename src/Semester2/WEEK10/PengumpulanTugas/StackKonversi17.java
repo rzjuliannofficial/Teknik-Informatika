@@ -1,7 +1,7 @@
 package WEEK10.PengumpulanTugas;
 
 public class StackKonversi17 {
-    int[] tumpukanBiner;
+    int[] tumpukanBiner; //deklarasi stack untuk menyimpan bilangan biner
     int size;
     int top; //indeks top dari stack
 

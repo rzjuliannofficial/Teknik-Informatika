@@ -41,6 +41,10 @@ public class StackTugasMahasiswa17 {
         }
     }
     
+    // Catatan: Apabila diperlukan informasi mengenai data mahasiswa yang diambil, maka tipe
+            //kembalian harus berupa object Mahasiswa. Sebaliknya, tipe kembalian void dapat digunakan jika
+            //data mahasiswa yang dikeluarkan tidak akan diolah atau digunakan lagi
+    
     public Mahasiswa17 pop() {
         if (!isEmpty()) { //!isEmpty()) , jadi jika hasil isEmpty() false, if akan di negasi , = true
                           //jika hasilnya false maka tidak masuk if
@@ -96,12 +100,12 @@ public class StackTugasMahasiswa17 {
 
     public String konversiDesimalKeBiner(int nilai){
         StackKonversi17 stackKonversi = new StackKonversi17(); //inisialisasi objek stackKonversi menggunakan class StackKonversi17
-        while (nilai > 0) { 
+        while (nilai != 0) { 
             int sisa = nilai % 2; //sisa bagi 2
             stackKonversi.push(sisa); //push ke stack
             nilai = nilai / 2; //nilai dibagi 2
         }
-        String biner = new String();
+        String biner = new String(); //inisialisasi string biner menjadi objek baru
         while (!stackKonversi.isEmpty()) {
             biner += stackKonversi.pop(); //pop dari stack
         }
