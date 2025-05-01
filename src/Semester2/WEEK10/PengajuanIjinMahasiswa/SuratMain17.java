@@ -15,7 +15,7 @@ public class SuratMain17 {
             System.out.println("0. Keluar");
             System.out.print("Pilih Menu: ");
             pilih = sc.nextInt();
-            sc.nextLine(); // Membersihkan newline character dari input buffer
+            sc.nextLine();
             switch (pilih) {
                 case 1:
                     System.out.println("=== Ajukan Surat Ijin ===");
@@ -53,7 +53,7 @@ public class SuratMain17 {
                     if (lihat != null) {
                         System.out.println("Surat Terakhir diajukan oleh: " + lihat.namaMahasiswa);
                         System.out.println("Surat Ijin dengan detail");
-                        lihat.tampilkanSurat(); // Menampilkan detail surat
+                        lihat.tampilkanSurat();
                     }
                     System.out.println();
                     break;
