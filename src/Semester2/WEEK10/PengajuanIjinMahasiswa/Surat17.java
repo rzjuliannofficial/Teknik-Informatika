@@ -18,4 +18,11 @@ public class Surat17 {
         this.jenisIjin = jenisIjin;
         this.durasi = durasi;
     }
+
+    public void tampilkanSurat() {
+        System.out.println("=========================================");
+        System.out.printf("%-10s| %-10s | %-10s | %-10s | %-10s |%n", "Id Surat", "Nama", "Kelas", "Jenis Ijin", "Durasi Ijin");
+        System.out.printf("%-10s| %-10s | %-10s | %-10s | %-10s |%n", idSurat, namaMahasiswa, kelas, jenisIjin, durasi);
+        System.out.println("=========================================");
+    }
 }

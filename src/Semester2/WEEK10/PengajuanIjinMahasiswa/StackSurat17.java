@@ -62,7 +62,8 @@ public class StackSurat17 {
         boolean ada = false; //flag untuk menandakan apakah surat ditemukan
         for (int i = 0; i <= top; i++) {
             if (stackSurat[i].namaMahasiswa.equalsIgnoreCase(namaMahasiswa)) {
-                System.out.println("Surat ditemukan: " + stackSurat[i].idSurat);
+                System.out.println("Surat ditemukan: ");
+                stackSurat[i].tampilkanSurat(); // Menampilkan detail surat
                 ada = true; //surat ditemukan
             }
         }

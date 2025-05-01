@@ -19,7 +19,7 @@ public class SuratMain17 {
             switch (pilih) {
                 case 1:
                     System.out.println("=== Ajukan Surat Ijin ===");
-                    System.out.print("Id Surat:" );
+                    System.out.print("Id Surat: " );
                     String idSurat = sc.nextLine();
                     System.out.print("Nama: ");
                     String nama = sc.nextLine();
@@ -34,8 +34,40 @@ public class SuratMain17 {
                     System.out.println();
                     break;
                 
+                    case 2:
+                    System.out.println("=== Proses Surat Ijin ===");
+                    Surat17 proses = stackSurat.pop(); // Mengambil surat dari stack
+                    if (proses != null) {
+                        System.out.println("Proses surat dari " + proses.namaMahasiswa);
+                        System.out.println("Surat Ijin dengan detail");
+                        proses.tampilkanSurat(); // Menampilkan detail surat
+                        System.out.println("Surat Ijin telah diproses.");
+                        System.out.println("=========================================");
+                    }
+                    System.out.println();
+                    break;
+
+                    case 3:
+                    System.out.println("=== Surat Ijin Terakhir ===");
+                    Surat17 lihat = stackSurat.peek(); // Mengambil surat teratas dari stack
+                    if (lihat != null) {
+                        System.out.println("Surat Terakhir diajukan oleh: " + lihat.namaMahasiswa);
+                        System.out.println("Surat Ijin dengan detail");
+                        lihat.tampilkanSurat(); // Menampilkan detail surat
+                    }
+                    System.out.println();
+                    break;
+
+                    case 4:
+                    System.out.println("=== Cari Surat Ijin ===");
+                    System.out.print("Masukkan Nama Mahasiswa: ");
+                    String namaMahasiswa = sc.nextLine();
+                    stackSurat.searchingSurat(namaMahasiswa); // Mencari surat berdasarkan nama mahasiswa
+                    System.out.println();
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+                    System.out.println();
                     break;
             }
         } while (pilih != 0);
