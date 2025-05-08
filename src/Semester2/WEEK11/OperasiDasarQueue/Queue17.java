@@ -29,4 +29,13 @@ public class Queue17 {
             return false;
         }
     }
+
+    public void peek(){
+        if (!isEmpty()) {
+            System.out.println("Eelemnt terdepan: "+data[front]);
+        }else {
+            System.out.println("Queue masih kosong");
+        }
+    }
+
 }
