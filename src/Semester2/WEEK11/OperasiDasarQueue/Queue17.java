@@ -13,4 +13,14 @@ public class Queue17 {
         size = 0;
         front = rear = -1;
     }
+
+    boolean isEmpty(){
+        if (size == 0) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    
 }
