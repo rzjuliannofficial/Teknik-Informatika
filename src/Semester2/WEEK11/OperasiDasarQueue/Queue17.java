@@ -38,4 +38,17 @@ public class Queue17 {
         }
     }
 
+    public void print(){
+        if (isEmpty()) {
+            System.out.println("Queue masih kosong");
+        }else{
+            int i = front;
+            while (i != rear) {
+                System.out.print(data[i] + " ");
+                i = (i+1) % max;
+            }
+        System.out.println(data[i] + " ");
+        System.out.println("Jumlah element = "+size);
+        }
+    }
 }
