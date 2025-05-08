@@ -51,4 +51,14 @@ public class Queue17 {
         System.out.println("Jumlah element = "+size);
         }
     }
+
+    public void clear(){
+        if (isEmpty()) {
+            System.out.println("Queue masih kosong");
+        }else {
+            front = rear = -1;
+            size=0;
+            System.out.println("Queue berhasi dikosongkan");
+        }
+    }
 }
