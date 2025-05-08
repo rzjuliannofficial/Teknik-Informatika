@@ -1,4 +1,5 @@
 package UTS_CM;
+public class MataKuliah7 {
     String kodeMK, namaMK;
     int sks;
 
