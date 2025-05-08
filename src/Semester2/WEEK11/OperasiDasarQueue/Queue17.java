@@ -22,5 +22,11 @@ public class Queue17 {
         }
     }
 
-    
+    boolean isFull(){
+        if (size == max) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
