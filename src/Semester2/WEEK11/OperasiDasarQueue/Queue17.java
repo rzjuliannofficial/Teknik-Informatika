@@ -61,4 +61,23 @@ public class Queue17 {
             System.out.println("Queue berhasi dikosongkan");
         }
     }
+    
+
+    public void Enqueue(int dt){
+        if (isFull()) {
+            System.out.println("Queue sudah penuh");
+        }else{
+            if (isEmpty()) {
+                front = rear =0;
+            }else {
+                if (rear == max -1) {
+                    rear = 0;
+                } else {
+                    rear++;
+                }
+            }
+            data[rear]= dt;
+            size++;
+        }
+    }
 }
