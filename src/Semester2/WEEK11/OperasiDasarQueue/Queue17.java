@@ -80,4 +80,23 @@ public class Queue17 {
             size++;
         }
     }
+    
+    public int Dequeue(){
+        int dt = 0;
+        if (isEmpty()) {
+            System.out.println("Queue masih kosong");
+        }else {
+            dt = data[front];
+            size--;
+            if(isEmpty()){
+                front = rear = -1;
+                if (front == max -1) {
+                    front =0;
+                }else{
+                front++;
+                }
+            }
+        }
+        return dt;
+    }
 }
