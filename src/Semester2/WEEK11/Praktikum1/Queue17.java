@@ -1,5 +1,4 @@
 package WEEK11.Praktikum1;
-
 public class Queue17 {
     int[] data;
     int front;
@@ -90,6 +89,7 @@ public class Queue17 {
             size--;
             if(isEmpty()){
                 front = rear = -1;
+            }else{
                 if (front == max -1) {
                     front =0;
                 }else{
