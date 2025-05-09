@@ -1,6 +1,6 @@
-package WEEK11.OperasiDasarQueue;
+package WEEK11.Praktikum1;
 
-public class MainQueue17 {
+public class QueueMain17 {
     public static void main(String[] args) {
         
     }

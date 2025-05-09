@@ -1,4 +1,4 @@
-package WEEK11.OperasiDasarQueue;
+package WEEK11.Praktikum1;
 
 public class Queue17 {
     int[] data;
