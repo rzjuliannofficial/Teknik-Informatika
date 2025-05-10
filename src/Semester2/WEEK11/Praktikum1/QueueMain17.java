@@ -26,7 +26,6 @@ public class QueueMain17 {
             menu();
             System.out.print("Pilih menu: ");
             pilih = sc.nextInt();
-            System.out.println();
             switch (pilih) {
                 case 1:
                     System.out.println("--Menu 1--");
@@ -45,20 +44,24 @@ public class QueueMain17 {
                 case 3:
                     System.out.println("--Menu 3--");
                     Q.print();
+                    System.out.println();
                     break;
-                case 4:
+                    case 4:
                     System.out.println("--Menu 4--");
                     Q.peek();
+                    System.out.println();
                     break;
-                case 5:
+                    case 5:
                     System.out.println("--Menu 5--");
                     Q.clear();
+                    System.out.println();
                     break;
-                case 0:
+                    case 0:
                     System.out.println("Keluar dari program");
                     break;
-                default:
+                    default:
                     System.out.println("Pilihan tidak valid, silakan coba lagi.");
+                    System.out.println();
                     break;
             }
         } while (pilih != 0);
