@@ -31,7 +31,7 @@ public class AntrianLayanan17 {
         }
     }
 
-    public void peek(){
+    public void lihatTerdepan(){
         if (isEmpty()) {
             System.out.println("Antrian masih kosong");
         }else {
@@ -69,7 +69,6 @@ public class AntrianLayanan17 {
         }
     }
     
-
     public void tambahAntrian(Mahasiswa17 mhs){
         if (isFull()) {
             System.out.println("Antrian penuh. tidak dapat menambah mahasiswa.");
