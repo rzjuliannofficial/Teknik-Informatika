@@ -55,6 +55,10 @@ public class AntrianLayanan17 {
         }
     }
 
+    public int getJumlahAntrian(){
+        return size;
+    }
+
     public void clear(){
         if (isEmpty()) {
             System.out.println("Queue masih kosong");
