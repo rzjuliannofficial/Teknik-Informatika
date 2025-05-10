@@ -13,6 +13,8 @@ public class LayananAkademikSIAKAD {
             System.out.println("3. Lihat Mahasiswa Terdepan");
             System.out.println("4. Lihat Semua Antrian");
             System.out.println("5. Jumlah Mahasiswa dalam Antrian");
+            System.out.println("6. Lihat Mahasiswa Terakhir");
+            System.out.println("7. Kosongkan Antrian");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = sc.nextInt(); sc.nextLine();
@@ -31,7 +33,7 @@ public class LayananAkademikSIAKAD {
                     antrian.tambahAntrian(mhs);
                     System.out.println();
                     break;
-                    case 2:
+                case 2:
                     Mahasiswa17 dilayani = antrian.layananMahasiswa17();
                     if (dilayani != null) {
                         System.out.println("Mahasiswa yang dilayani: ");
@@ -39,25 +41,35 @@ public class LayananAkademikSIAKAD {
                     }
                     System.out.println();
                     break;
-                    case 3:
+                case 3:
                     System.out.println("--Menu 3--");
                     antrian.lihatTerdepan();
                     System.out.println();
                     break;
-                    case 4:
+                case 4:
                     System.out.println("--Menu 4--");
                     antrian.tampilkanSemua();
                     System.out.println();
                     break;
-                    case 5:
+                case 5:
                     System.out.println("--Menu 5--");
                     System.out.println("Jumlah dalam antrian: " + antrian.getJumlahAntrian());
                     System.out.println();
                     break;
-                    case 0:
+                case 6:
+                    System.out.println("--Menu 6--");
+                    antrian.lihatTerakhir();
+                    System.out.println();
+                    break;
+                case 7:
+                    System.out.println("--Menu 7--");
+                    antrian.clear();
+                    System.out.println();
+                    break;
+                case 0:
                     System.out.println("Keluar dari program");
                     break;
-                    default:
+                default:
                     System.out.println("Pilihan tidak valid. Silakan coba lagi.");
                     System.out.println();
             }
