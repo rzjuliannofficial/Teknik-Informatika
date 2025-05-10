@@ -35,7 +35,7 @@ public class AntrianLayanan17 {
         if (isEmpty()) {
             System.out.println("Antrian masih kosong");
         }else {
-            System.out.print("Mahasiswa terdepan:");
+            System.out.println("Antrian mahasiswa terdepan:");
             System.out.println("NIM - NAMA - PRODI - KELAS");
             data[front].tampilkanData();
         }
@@ -59,22 +59,12 @@ public class AntrianLayanan17 {
         return size;
     }
 
-    public void clear(){
-        if (isEmpty()) {
-            System.out.println("Queue masih kosong");
-        }else {
-            front = rear = -1;
-            size=0;
-            System.out.println("Queue berhasi dikosongkan");
-        }
-    }
-    
     public void tambahAntrian(Mahasiswa17 mhs){
         if (isFull()) {
             System.out.println("Antrian penuh. tidak dapat menambah mahasiswa.");
             return;
         }
-        rear = (rear + 1) % max; //menghitung rear
+        rear = (rear + 1) % max; //menghitung rear, simple rear++
         data[rear] = mhs;
         size++;
         System.out.println(mhs.nama + " berhasil masuk ke antrian.");
@@ -86,8 +76,28 @@ public class AntrianLayanan17 {
             return null;
         }
         Mahasiswa17 mhs = data[front];
-        front = (front + 1) % max; //menghitung front
+        front = (front + 1) % max; //menghitung front, simple front++
         size--;
         return mhs;
+    }
+
+    public void lihatTerakhir(){
+        if (isEmpty()) {
+            System.out.println("Antrian masih kosong");
+        }else {
+            System.out.println("Antrian mahasiswa terakhir:");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData();
+        }
+    }
+
+    public void clear(){
+        if (isEmpty()) {
+            System.out.println("antrian masih kosong");
+        }else {
+            front = rear = -1;
+            size=0;
+            System.out.println("antrian berhasil dikosongkan");
+        }
     }
 }
