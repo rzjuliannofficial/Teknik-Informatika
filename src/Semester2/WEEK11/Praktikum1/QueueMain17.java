@@ -53,10 +53,14 @@ public class QueueMain17 {
                     System.out.println("--Menu 5--");
                     Q.clear();
                     break;
+                case 0:
+                    System.out.println("Keluar dari program");
+                    break;
                 default:
+                    System.out.println("Pilihan tidak valid, silakan coba lagi.");
                     break;
             }
-        } while (pilih > 0 && pilih <= 5);
+        } while (pilih != 0);
         sc.close();
         System.out.println("Program selesai");
     }
