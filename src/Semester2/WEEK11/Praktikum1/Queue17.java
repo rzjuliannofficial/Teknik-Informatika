@@ -8,7 +8,7 @@ public class Queue17 {
 
     public Queue17(int n){
         max = n;
-        data = new int[max];
+        data = new int[max]; 
         size = 0;
         front = rear = -1;
     }
@@ -42,7 +42,7 @@ public class Queue17 {
             System.out.println("Queue masih kosong");
         }else{
             int i = front;
-            while (i != rear) {
+            while (i != rear) { //pokok jika i ga sama dengan rear akan looping
                 System.out.print(data[i] + " ");
                 i = (i+1) % max;
             }
@@ -65,13 +65,13 @@ public class Queue17 {
     public void Enqueue(int dt){
         if (isFull()) {
             System.out.println("Queue sudah penuh");
-        }else{
-            if (isEmpty()) {
+        }else{ //jika tidak full masuk
+            if (isEmpty()) { //check apakah queue kosong, false lanjut else
                 front = rear =0;
-            }else {
-                if (rear == max -1) {
+            }else { //masuk ke else jika data sdh tidak kosong, atau indeks 0 sdh terisi 
+                if (rear == max -1) { //check apakah rear sudah diujung
                     rear = 0;
-                } else {
+                } else { //jika vbelum rear++
                     rear++;
                 }
             }
@@ -85,8 +85,9 @@ public class Queue17 {
         if (isEmpty()) {
             System.out.println("Queue masih kosong");
         }else {
-            dt = data[front];
-            size--;
+            dt = data[front]; //front ini dimulai dari 0, karena sdh di inisialisasi menjadi 0 di enqueue
+            size--; //perlu di ingat bahwa size ini dimulai dari indeks maxnya, karena sdh di increamet di enqueue
+                    //sizw hanya berfungsi untuk indikasi isfull dan isEmpty    
             if(isEmpty()){
                 front = rear = -1;
             }else{
