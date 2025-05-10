@@ -10,6 +10,7 @@ public class QueueMain17 {
         System.out.println("3. Print");
         System.out.println("4. Peek");
         System.out.println("5. Clear");
+        System.out.println("0. Keluar");
         System.out.println("-----------------");
     }
 
