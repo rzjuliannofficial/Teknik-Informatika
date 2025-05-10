@@ -44,7 +44,7 @@ public class Queue17 {
             int i = front;
             while (i != rear) { //pokok jika i ga sama dengan rear akan looping
                 System.out.print(data[i] + " ");
-                i = (i+1) % max;
+                i = (i+1) % max; //ini sama = dengan i++
             }
         System.out.println(data[i] + " ");
         System.out.println("Jumlah element = "+size);
@@ -65,6 +65,7 @@ public class Queue17 {
     public void Enqueue(int dt){
         if (isFull()) {
             System.out.println("Queue sudah penuh");
+            System.exit(0); // perintah java untuk keluar dari program
         }else{ //jika tidak full masuk
             if (isEmpty()) { //check apakah queue kosong, false lanjut else
                 front = rear =0;
@@ -84,6 +85,7 @@ public class Queue17 {
         int dt = 0;
         if (isEmpty()) {
             System.out.println("Queue masih kosong");
+            System.exit(0); // perintah java untuk keluar dari program
         }else {
             dt = data[front]; //front ini dimulai dari 0, karena sdh di inisialisasi menjadi 0 di enqueue
             size--; //perlu di ingat bahwa size ini dimulai dari indeks maxnya, karena sdh di increamet di enqueue
