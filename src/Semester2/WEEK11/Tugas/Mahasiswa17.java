@@ -5,6 +5,4 @@ public class Mahasiswa17 {
     String nama;
     String prodi;
     String kelas;
-
-    
 }
