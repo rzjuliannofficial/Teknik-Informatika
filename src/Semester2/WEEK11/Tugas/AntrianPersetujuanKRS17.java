@@ -36,15 +36,25 @@ public class AntrianPersetujuanKRS17 {
     public void lihatAntrianTerdepan(){
         if (isEmpty()) {
             System.out.println("Antrian masih kosong");
+        }else if (size < 2 || size == 1) {
+            System.out.println("Jumlah Antrian kurang dari 2");
+            System.out.println("===================================================================+");
+            System.out.println("Menampilkan antrian 1 terdepan");
+            System.out.println("===================================================================+");
+            System.out.printf("|%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
+            System.out.println("===================================================================+");
+            data[front].tampilkanData();
+            System.out.println("===================================================================+");
         } else {
-            System.out.println("=========================================");
+            System.out.println("===================================================================+");
             System.out.println("Menampilkan antrian 2 terdepan");
-            System.out.println("=========================================");
-            System.out.printf("%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
-            System.out.println("=========================================");
+            System.out.println("===================================================================+");
+            System.out.printf("|%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
+            System.out.println("===================================================================+");
             for(int i = 0 ; i < 2 ; i++){
                 data[front+i].tampilkanData();
             }
+            System.out.println("===================================================================+");
         }
     }
     
@@ -52,12 +62,13 @@ public class AntrianPersetujuanKRS17 {
         if (isEmpty()) {
             System.out.println("Antrian masih kosong");
         }else {
-            System.out.println("=========================================");
+            System.out.println("===================================================================+");
             System.out.println("Antrian mahasiswa terakhir:");
-            System.out.println("=========================================");
-            System.out.printf("%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
-            System.out.println("=========================================");
+            System.out.println("===================================================================+");
+            System.out.printf("|%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
+            System.out.println("===================================================================+");
             data[rear].tampilkanData();
+            System.out.println("===================================================================+");
         }
     }
 
@@ -65,15 +76,16 @@ public class AntrianPersetujuanKRS17 {
         if (isEmpty()) {
             System.out.println("Antrian masih kosong");
         } else {
-            System.out.println("=========================================");
+            System.out.println("===================================================================+");
             System.out.println("Daftar antrian persetujuan KRS");
-            System.out.println("=========================================");
-            System.out.printf("%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
-            System.out.println("=========================================");
+            System.out.println("===================================================================+");
+            System.out.printf("no |%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
+            System.out.println("===================================================================+");
             for (int i = 0; i < size; i++) {
                 System.out.print(i+1+". ");
-                data[i].tampilkanData();
+                data[front+i].tampilkanData();
             }
+            System.out.println("===================================================================+");
         }
     }
 
@@ -117,23 +129,25 @@ public class AntrianPersetujuanKRS17 {
         } else {
             if (size < 2 || size == 1) {
                 System.out.println("Jumlah Antrian kurang dari 2");
-                System.out.println("=========================================");
+                System.out.println("===================================================================+");
                 System.out.println("Memanggil 1 mahasiswa untuk proses KRS");
-                System.out.println("=========================================");
+                System.out.println("===================================================================+");
                 data[front].tampilkanData();
                 front++;
                 done++;
                 size--;
+                System.out.println("===================================================================+");
             } else {
-                System.out.println("=========================================");
+                System.out.println("===================================================================+");
                 System.out.println("Memanggil 2 mahasiswa untuk proses KRS");
-                System.out.println("=========================================");
+                System.out.println("===================================================================+");
                 for (int i = 0; i < 2; i++) {
                     data[front].tampilkanData();
                     front++;
                     size--;
                     done++;
                 }
+                System.out.println("===================================================================+");
             }
         }
     }
