@@ -77,15 +77,29 @@ public class AntrianPersetujuanKRS17 {
         }
     }
 
-    public Mahasiswa17 layaniAntrian(){
+    public void layaniAntrian(){
         if (isEmpty()) {
             System.out.println("Antrian masih kosong");
-            return null;
+            
         } else {
-            Mahasiswa17 mhs = data[front];
-            front++;
-            size--;
-            return mhs;
+            if (size < 2) {
+                System.out.println("Jumlah Antrian kurang dari 2");
+            } else if (size ==1) {
+                System.out.println("=========================================");
+                System.out.println("Memanggil 1 mahasiswa untuk proses KRS");
+                System.out.println("=========================================");
+                data[front].tampilkanData();
+            } else {
+                System.out.println("=========================================");
+                System.out.println("Memanggil 2 mahasiswa untuk proses KRS");
+                System.out.println("=========================================");
+                for (int i = 0; i < 2; i++) {
+                    Mahasiswa17 mhs = data[front];
+                    data[front].tampilkanData();
+                    front++;
+                    size--;
+                }
+            }
         }
     }
 
