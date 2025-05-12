@@ -8,6 +8,7 @@ public class AntrianPersetujuanKRS17 {
     int rear;
     int size;
     int max;
+    int done = 0;
 
     public AntrianPersetujuanKRS17(int max){
         this.max = max ;
@@ -48,6 +49,19 @@ public class AntrianPersetujuanKRS17 {
         }
     }
     
+    public void lihatTerakhir(){
+        if (isEmpty()) {
+            System.out.println("Antrian masih kosong");
+        }else {
+            System.out.println("=========================================");
+            System.out.println("Antrian mahasiswa terakhir:");
+            System.out.println("=========================================");
+            System.out.printf("%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
+            System.out.println("=========================================");
+            data[rear].tampilkanData();
+        }
+    }
+
     public void tampilkanSemuaAntrian(){
         if (isEmpty()) {
             System.out.println("Antrian masih kosong");
@@ -68,6 +82,10 @@ public class AntrianPersetujuanKRS17 {
         return size;
     }
 
+    public int getJumlahSudahDilayani(){
+        return done;
+    }
+
     public void tambahAntrian(Mahasiswa17 mhs){
         if (isFull()) {
             System.out.println("Antrian penuh, tidak dapat menambah antrian");
@@ -84,13 +102,13 @@ public class AntrianPersetujuanKRS17 {
             System.out.println("Antrian masih kosong");
             
         } else {
-            if (size < 2) {
+            if (size < 2 || size == 1) {
                 System.out.println("Jumlah Antrian kurang dari 2");
-            } else if (size ==1) {
                 System.out.println("=========================================");
                 System.out.println("Memanggil 1 mahasiswa untuk proses KRS");
                 System.out.println("=========================================");
                 data[front].tampilkanData();
+                done++;
             } else {
                 System.out.println("=========================================");
                 System.out.println("Memanggil 2 mahasiswa untuk proses KRS");
@@ -100,6 +118,7 @@ public class AntrianPersetujuanKRS17 {
                     data[front].tampilkanData();
                     front++;
                     size--;
+                    done++;
                 }
             }
         }
