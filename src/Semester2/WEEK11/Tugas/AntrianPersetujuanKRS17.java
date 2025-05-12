@@ -22,4 +22,12 @@ public class AntrianPersetujuanKRS17 {
             return false;
         }
     }
+    
+    public boolean isFull(){
+        if (size == max) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
