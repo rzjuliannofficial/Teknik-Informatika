@@ -59,8 +59,19 @@ public class AntrianPersetujuanKRS17 {
             }
         }
     }
-    
+
     public int getJumlahAntrian(){
         return size;
+    }
+
+    public void tambahAntrian(Mahasiswa17 mhs){
+        if (isFull()) {
+            System.out.println("Antrian penuh, tidak dapat menambah antrian");
+        } else {
+            ++rear; //rear yang awalnya -1 menjadi +1 jika kita menambah antrian
+            data[rear] = mhs;
+            size++;
+            System.out.println(mhs.nama + " telah berhasil masuk ke dalam antrian");
+        }
     }
 }
