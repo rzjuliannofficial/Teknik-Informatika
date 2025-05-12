@@ -59,4 +59,8 @@ public class AntrianPersetujuanKRS17 {
             }
         }
     }
+    
+    public int getJumlahAntrian(){
+        return size;
+    }
 }
