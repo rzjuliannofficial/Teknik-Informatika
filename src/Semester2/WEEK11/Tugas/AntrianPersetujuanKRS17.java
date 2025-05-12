@@ -14,4 +14,12 @@ public class AntrianPersetujuanKRS17 {
         this.front = 0; //index depan
         this.rear = -1; //index belakang
     }
+
+    public boolean isEmpty(){
+        if (size == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
