@@ -1,7 +1,5 @@
 package WEEK11.Tugas;
 
-import WEEK2.classMahasiswa.mahasiswa17;
-
 public class AntrianPersetujuanKRS17 {
     Mahasiswa17[] data;
     int front;
@@ -9,6 +7,7 @@ public class AntrianPersetujuanKRS17 {
     int size;
     int max;
     int done = 0;
+    int totalMahasiswa = 30; // Total mahasiswa yang harus dilayani oleh DPA
 
     public AntrianPersetujuanKRS17(int max){
         this.max = max ;
@@ -86,7 +85,16 @@ public class AntrianPersetujuanKRS17 {
         return done;
     }
 
+    public int getJumlahBelumDilayani() {
+        return totalMahasiswa - done;
+    }
+
     public void tambahAntrian(Mahasiswa17 mhs){
+        if (done + size >= totalMahasiswa) {
+            System.out.println("Tidak dapat menambahkan lebih banyak mahasiswa. Total mahasiswa yang harus dilayani adalah " + totalMahasiswa);
+            return;
+        }
+
         if (isFull()) {
             System.out.println("Antrian penuh, tidak dapat menambah antrian");
         } else {
@@ -98,6 +106,11 @@ public class AntrianPersetujuanKRS17 {
     }
 
     public void layaniAntrian(){
+        if (done >= totalMahasiswa) {
+            System.out.println("Semua mahasiswa sudah dilayani.");
+            return;
+        }
+
         if (isEmpty()) {
             System.out.println("Antrian masih kosong");
             
@@ -108,13 +121,14 @@ public class AntrianPersetujuanKRS17 {
                 System.out.println("Memanggil 1 mahasiswa untuk proses KRS");
                 System.out.println("=========================================");
                 data[front].tampilkanData();
+                front++;
                 done++;
+                size--;
             } else {
                 System.out.println("=========================================");
                 System.out.println("Memanggil 2 mahasiswa untuk proses KRS");
                 System.out.println("=========================================");
                 for (int i = 0; i < 2; i++) {
-                    Mahasiswa17 mhs = data[front];
                     data[front].tampilkanData();
                     front++;
                     size--;
