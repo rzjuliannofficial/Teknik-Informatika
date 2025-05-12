@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class LayananPersetujuanKRS17 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         AntrianPersetujuanKRS17 antrian = new AntrianPersetujuanKRS17(10); // Maksimal 10 antrian dalam satu waktu
 
         int pilihan;
@@ -23,8 +23,8 @@ public class LayananPersetujuanKRS17 {
             System.out.println("9. Reset Antrian");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
-            pilihan = scanner.nextInt();
-            scanner.nextLine();
+            pilihan = sc.nextInt();
+            sc.nextLine();
 
             switch (pilihan) {
                 case 1:
@@ -33,13 +33,13 @@ public class LayananPersetujuanKRS17 {
                         break;
                     }
                     System.out.print("Masukkan NIM: ");
-                    String nim = scanner.nextLine();
+                    String nim = sc.nextLine();
                     System.out.print("Masukkan Nama: ");
-                    String nama = scanner.nextLine();
+                    String nama = sc.nextLine();
                     System.out.print("Masukkan Prodi: ");
-                    String prodi = scanner.nextLine();
+                    String prodi = sc.nextLine();
                     System.out.print("Masukkan Kelas: ");
-                    String kelas = scanner.nextLine();
+                    String kelas = sc.nextLine();
                     Mahasiswa17 mhs = new Mahasiswa17(nim, nama, prodi, kelas);
                     antrian.tambahAntrian(mhs);
                     break;
@@ -86,6 +86,6 @@ public class LayananPersetujuanKRS17 {
             System.out.println();
         } while (pilihan != 0);
 
-        scanner.close();
+        sc.close();
     }
 }
