@@ -15,6 +15,6 @@ public class Mahasiswa17 {
     }
 
     public void tampilkanData(){
-        System.out.printf("%-15s|%-15s|%-15s|%-15s|%n", nim, nama, prodi, kelas);
+        System.out.printf("|%-15s|%-15s|%-15s|%-15s|%n", nim, nama, prodi, kelas);
     }
 }
