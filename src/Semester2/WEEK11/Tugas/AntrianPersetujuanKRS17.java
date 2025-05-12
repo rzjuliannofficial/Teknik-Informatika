@@ -43,4 +43,20 @@ public class AntrianPersetujuanKRS17 {
             data[front].tampilkanData();
         }
     }
+    
+    public void tampilkanSemuaAntrian(){
+        if (isEmpty()) {
+            System.out.println("Antrian masih kosong");
+        } else {
+            System.out.println("=========================================");
+            System.out.println("Daftar antrian persetujuan KRS");
+            System.out.println("=========================================");
+            System.out.printf("%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
+            System.out.println("=========================================");
+            for (int i = 0; i < size; i++) {
+                System.out.print(i+1+". ");
+                data[i].tampilkanData();
+            }
+        }
+    }
 }
