@@ -11,7 +11,7 @@ public class AntrianLayanan17 {
         this.max = max ;
         this.data = new Mahasiswa17[max]; //array data
         this.size = 0; 
-        this.front = -1; 
+        this.front = 0; 
         this.rear = -1; 
     }
 
@@ -49,7 +49,7 @@ public class AntrianLayanan17 {
         System.out.println("Daftar Mahasiswa dalam antrian: ");
         System.out.println("NIM - NAMA - PRODI - KELAS");
         for (int i = 0; i < size; i++) {
-            int index = (front + i) % max; //menghitung index
+            int index = (front + i) % max; //menghitung index , cepet nya i++
             System.out.print((i+1) + ". ");
             data[index].tampilkanData();
         }
@@ -75,8 +75,8 @@ public class AntrianLayanan17 {
             System.out.println("Antrian kosong.");
             return null;
         }
-        front = (front + 1) % max; //menghitung front, simple front++
         Mahasiswa17 mhs = data[front];
+        front = (front + 1) % max; //menghitung front, simple front++
         size--;
         return mhs;
     }
@@ -95,7 +95,8 @@ public class AntrianLayanan17 {
         if (isEmpty()) {
             System.out.println("antrian masih kosong");
         }else {
-            front = rear = -1;
+            front = 0;
+            rear = -1;
             size=0;
             System.out.println("antrian berhasil dikosongkan");
         }
