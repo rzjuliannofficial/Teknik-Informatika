@@ -110,7 +110,7 @@ public class AntrianPersetujuanKRS17 {
         if (isFull()) {
             System.out.println("Antrian penuh, tidak dapat menambah antrian");
         } else {
-            ++rear; //rear yang awalnya -1 menjadi +1 jika kita menambah antrian
+            rear++; //rear yang awalnya -1 menjadi +1 jika kita menambah antrian
             data[rear] = mhs;
             size++;
             System.out.println(mhs.nama + " telah berhasil masuk ke dalam antrian");
@@ -129,25 +129,29 @@ public class AntrianPersetujuanKRS17 {
         } else {
             if (size < 2 || size == 1) {
                 System.out.println("Jumlah Antrian kurang dari 2");
-                System.out.println("===================================================================+");
+                System.out.println("================================================================+");
                 System.out.println("Memanggil 1 mahasiswa untuk proses KRS");
-                System.out.println("===================================================================+");
+                System.out.println("================================================================+");
+                System.out.printf("|%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
+                System.out.println("================================================================+");
                 data[front].tampilkanData();
                 front++;
                 done++;
                 size--;
-                System.out.println("===================================================================+");
+                System.out.println("================================================================+");
             } else {
-                System.out.println("===================================================================+");
+                System.out.println("================================================================+");
                 System.out.println("Memanggil 2 mahasiswa untuk proses KRS");
-                System.out.println("===================================================================+");
+                System.out.println("================================================================+");
+                System.out.printf("|%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
+                System.out.println("================================================================+");
                 for (int i = 0; i < 2; i++) {
                     data[front].tampilkanData();
                     front++;
                     size--;
                     done++;
                 }
-                System.out.println("===================================================================+");
+                System.out.println("===============================================================+");
             }
         }
     }
