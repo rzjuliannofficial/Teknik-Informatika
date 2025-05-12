@@ -53,7 +53,7 @@ public class LayananPersetujuanKRS17 {
                     break;
 
                 case 4:
-                    antrian.lihatTerakhir();
+                    antrian.lihatAntrianTerakhir();
                     break;
 
                 case 5:

@@ -58,7 +58,7 @@ public class AntrianPersetujuanKRS17 {
         }
     }
     
-    public void lihatTerakhir(){
+    public void lihatAntrianTerakhir(){
         if (isEmpty()) {
             System.out.println("Antrian masih kosong");
         }else {
