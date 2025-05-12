@@ -11,7 +11,7 @@ public class AntrianLayanan17 {
         this.max = max ;
         this.data = new Mahasiswa17[max]; //array data
         this.size = 0; 
-        this.front = 0; 
+        this.front = -1; 
         this.rear = -1; 
     }
 
@@ -75,8 +75,8 @@ public class AntrianLayanan17 {
             System.out.println("Antrian kosong.");
             return null;
         }
-        Mahasiswa17 mhs = data[front];
         front = (front + 1) % max; //menghitung front, simple front++
+        Mahasiswa17 mhs = data[front];
         size--;
         return mhs;
     }
