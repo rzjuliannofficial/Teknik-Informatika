@@ -22,12 +22,25 @@ public class AntrianPersetujuanKRS17 {
             return false;
         }
     }
-    
+
     public boolean isFull(){
         if (size == max) {
             return true;
         } else {
             return false;
+        }
+    }
+
+    public void lihatAntrianTerdepan(){
+        if (isEmpty()) {
+            System.out.println("Antrian masih kosong");
+        } else {
+            System.out.println("=========================================");
+            System.out.println("Menampilkan antrian terdepan");
+            System.out.println("=========================================");
+            System.out.printf("%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
+            System.out.println("=========================================");
+            data[front].tampilkanData();
         }
     }
 }
