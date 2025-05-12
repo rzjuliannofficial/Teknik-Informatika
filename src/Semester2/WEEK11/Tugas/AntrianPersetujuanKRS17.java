@@ -38,11 +38,13 @@ public class AntrianPersetujuanKRS17 {
             System.out.println("Antrian masih kosong");
         } else {
             System.out.println("=========================================");
-            System.out.println("Menampilkan antrian terdepan");
+            System.out.println("Menampilkan antrian 2 terdepan");
             System.out.println("=========================================");
             System.out.printf("%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
             System.out.println("=========================================");
-            data[front].tampilkanData();
+            for(int i = 0 ; i < 2 ; i++){
+                data[front+i].tampilkanData();
+            }
         }
     }
     
