@@ -1,5 +1,7 @@
 package WEEK11.Tugas;
 
+import WEEK2.classMahasiswa.mahasiswa17;
+
 public class AntrianPersetujuanKRS17 {
     Mahasiswa17[] data;
     int front;
@@ -73,5 +75,24 @@ public class AntrianPersetujuanKRS17 {
             size++;
             System.out.println(mhs.nama + " telah berhasil masuk ke dalam antrian");
         }
+    }
+
+    public Mahasiswa17 layaniAntrian(){
+        if (isEmpty()) {
+            System.out.println("Antrian masih kosong");
+            return null;
+        } else {
+            Mahasiswa17 mhs = data[front];
+            front++;
+            size--;
+            return mhs;
+        }
+    }
+
+    public void ResetAntrian(){
+        size = 0;
+        front = 0;
+        rear = -1;
+        System.out.println("Antrian telah di RESET");
     }
 }
