@@ -49,7 +49,7 @@ public class AntrianLayanan17 {
         System.out.println("Daftar Mahasiswa dalam antrian: ");
         System.out.println("NIM - NAMA - PRODI - KELAS");
         for (int i = 0; i < size; i++) {
-            int index = (front + i) % max; //menghitung index , cepet nya i++
+            int index = (front + i) % max; //menghitung index , cepet nya i++ , mengikuti penjelasan dibawah, kalau menampilkan lebih mudah i++ karena inisilisasinya 0
             System.out.print((i+1) + ". ");
             data[index].tampilkanData();
         }
@@ -66,6 +66,7 @@ public class AntrianLayanan17 {
         }
         rear = (rear + 1) % max; //menghitung rear, simple rear++
         data[rear] = mhs;
+        //penjelasan singkat: ini adalah cara agar efisiensi memory => misal (0 + 1) % 5 = 1, ini membatasi front dapat digunakan terus menerus , jika front = 5 maka akan kembali ke 0
         size++;
         System.out.println(mhs.nama + " berhasil masuk ke antrian.");
     }
