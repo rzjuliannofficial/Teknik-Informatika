@@ -49,7 +49,7 @@ public class AntrianLayanan17 {
         System.out.println("Daftar Mahasiswa dalam antrian: ");
         System.out.println("NIM - NAMA - PRODI - KELAS");
         for (int i = 0; i < size; i++) {
-            int index = (front + i) % max; //menghitung index , cepet nya i++ , mengikuti penjelasan dibawah, kalau menampilkan lebih mudah i++ karena inisilisasinya 0
+            int index = (front + i) % max; 
             System.out.print((i+1) + ". ");
             data[index].tampilkanData();
         }
@@ -79,7 +79,7 @@ public class AntrianLayanan17 {
             return null;
         }
         Mahasiswa17 mhs = data[front];
-        front = (front + 1) % max; //menghitung front, simple front++
+        front = (front + 1) % max;
         size--;
         return mhs;
     }
