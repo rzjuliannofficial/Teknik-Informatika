@@ -82,8 +82,9 @@ public class AntrianPersetujuanKRS17 {
             System.out.printf("no |%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
             System.out.println("===================================================================+");
             for (int i = 0; i < size; i++) {
-                System.out.print(i+1+". ");
-                data[front+i].tampilkanData();
+                int index = (front + i) % max;
+                System.out.print((i+1)+". ");
+                data[index].tampilkanData();
             }
             System.out.println("===================================================================+");
         }
@@ -110,7 +111,7 @@ public class AntrianPersetujuanKRS17 {
         if (isFull()) {
             System.out.println("Antrian penuh, tidak dapat menambah antrian");
         } else {
-            rear++; //rear yang awalnya -1 menjadi +1 jika kita menambah antrian
+            rear = (rear + 1) % max; 
             data[rear] = mhs;
             size++;
             System.out.println(mhs.nama + " telah berhasil masuk ke dalam antrian");
@@ -135,7 +136,7 @@ public class AntrianPersetujuanKRS17 {
                 System.out.printf("|%-15s|%-15s|%-15s|%-15s|%n","nim","nama","prodi","kelas");
                 System.out.println("================================================================+");
                 data[front].tampilkanData();
-                front++;
+                front = (front + 1) % max;
                 done++;
                 size--;
                 System.out.println("================================================================+");
@@ -147,7 +148,7 @@ public class AntrianPersetujuanKRS17 {
                 System.out.println("================================================================+");
                 for (int i = 0; i < 2; i++) {
                     data[front].tampilkanData();
-                    front++;
+                    front = (front + 1) % max;
                     size--;
                     done++;
                 }
