@@ -64,9 +64,11 @@ public class AntrianLayanan17 {
             System.out.println("Antrian penuh. tidak dapat menambah mahasiswa.");
             return;
         }
-        rear = (rear + 1) % max; //menghitung rear, simple rear++
-        data[rear] = mhs;
+        rear = (rear + 1) % max; 
         //penjelasan singkat: ini adalah cara agar efisiensi memory => misal (0 + 1) % 5 = 1, ini membatasi front dapat digunakan terus menerus , jika front = 5 maka akan kembali ke 0
+        //jika menggunakan rear++ maka akan ada index out of bound 
+        //jika kita sdh full emngisi, terus kita pop 1 orang, jika masukkan lagi maka index out of bound.
+        data[rear] = mhs;
         size++;
         System.out.println(mhs.nama + " berhasil masuk ke antrian.");
     }
