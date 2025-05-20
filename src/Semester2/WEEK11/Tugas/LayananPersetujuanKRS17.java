@@ -28,10 +28,6 @@ public class LayananPersetujuanKRS17 {
 
             switch (pilihan) {
                 case 1:
-                    if (antrian.getJumlahSudahDilayani() + antrian.getJumlahAntrian() >= 30) {
-                        System.out.println("Tidak dapat menambahkan lebih banyak mahasiswa. Total mahasiswa yang harus dilayani adalah 30.");
-                        break;
-                    }
                     System.out.print("Masukkan NIM: ");
                     String nim = sc.nextLine();
                     System.out.print("Masukkan Nama: ");
