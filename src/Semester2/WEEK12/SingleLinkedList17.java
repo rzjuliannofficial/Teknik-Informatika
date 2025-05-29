@@ -48,6 +48,8 @@ public class SingleLinkedList17 {
     public void insertAfter(String key , Mahasiswa17 input){
         Node17 nodeInput = new Node17(input, null);
         Node17 temp = head;
+        
+        //tambahan inisiatif
         if (isEmpty()) {
             System.out.println("Linked list kosong, tidak bisa insert after");
             return;
@@ -72,6 +74,7 @@ public class SingleLinkedList17 {
     }
 
     public void insertAt(int indeks, Mahasiswa17 input){
+        //tambahan inisiatif
         if (isEmpty()) {
             System.out.println("Linked list kosong, tidak bisa insert at index");
             return;
