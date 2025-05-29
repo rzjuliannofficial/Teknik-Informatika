@@ -48,6 +48,11 @@ public class SingleLinkedList17 {
     public void insertAfter(String key , Mahasiswa17 input){
         Node17 nodeInput = new Node17(input, null);
         Node17 temp = head;
+        if (isEmpty()) {
+            System.out.println("Linked list kosong, tidak bisa insert after");
+            return;
+        }
+
         do {
             if(temp.data.nama.equalsIgnoreCase(key)){
                 nodeInput.next = temp.next;
@@ -67,6 +72,11 @@ public class SingleLinkedList17 {
     }
 
     public void insertAt(int indeks, Mahasiswa17 input){
+        if (isEmpty()) {
+            System.out.println("Linked list kosong, tidak bisa insert at index");
+            return;
+        }
+        
         if (indeks < 0) {
             System.out.println("Indeks salah");
         } else if (indeks == 0) {
