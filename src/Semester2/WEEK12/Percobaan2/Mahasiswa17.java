@@ -1,4 +1,4 @@
-package WEEK12;
+package WEEK12.Percobaan2;
 
 public class Mahasiswa17 {
     String nim;

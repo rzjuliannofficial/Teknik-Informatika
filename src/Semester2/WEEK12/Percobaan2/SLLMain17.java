@@ -1,4 +1,4 @@
-package WEEK12;
+package WEEK12.Percobaan2;
 
 import java.util.Scanner;
 

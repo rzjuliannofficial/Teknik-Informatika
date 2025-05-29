@@ -1,4 +1,4 @@
-package WEEK12;
+package WEEK12.Percobaan2;
 
 public class SingleLinkedList17 {
     Node17 head;
@@ -93,6 +93,55 @@ public class SingleLinkedList17 {
             if (temp.next.next == null) {
                 tail=temp.next;
             }
+        }
+    }
+
+    public void getData(int indeks){
+        Node17 temp = head;
+        for (int i = 0; i < indeks; i++) {
+            temp = temp.next;
+        }
+        temp.data.tampilkanInformasi();
+    }
+
+    public int indexOf(String key){
+        Node17 temp = head;
+        int indeks = 0;
+        while (temp != null && !temp.data.nama.equalsIgnoreCase(key)) {
+            temp = temp.next;
+            indeks++;
+        }
+
+        if (temp == null) {
+            return -1; // jika tidak ditemukan
+        } else {
+            return indeks; // mengembalikan indeks dari data yang ditemukan
+            
+        }
+    }
+
+    public void removeFirst(){
+        if (isEmpty()) {
+            System.out.println("Linked list kosong, tidak bisa remove first");
+        } else if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+        }
+    }
+
+    public void removeLast(){
+        if (isEmpty()) {
+            System.out.println("Linked list kosong, tidak bisa remove last");
+        } else if (head == tail) {
+            head = tail = null;
+        } else {
+            Node17 temp = head;
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+            temp.next = null;
+            tail = temp;
         }
     }
 }
