@@ -144,4 +144,40 @@ public class SingleLinkedList17 {
             tail = temp;
         }
     }
+
+    public void remove(String key){
+        if (isEmpty()) {
+            System.out.println("Linked list kosong, tidak bisa remove");
+        }else {
+            Node17 temp = head;
+            while (temp != null) {
+                if ((temp.data.nama.equalsIgnoreCase(key)) && (temp == head)) {
+                    this.removeFirst();
+                    break;
+                } else if (temp.data.nama.equalsIgnoreCase(key)) {
+                    temp.next = temp.next.next;
+                    if (temp.next == null) {
+                        tail = temp;
+                    }
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
+    }
+
+    public void removeAt(int indeks){
+        if (indeks == 0) {
+            removeFirst();
+        }else {
+            Node17 temp = head;
+            for (int i = 0 ; i < indeks -1; i++) {
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+            if (temp.next == null) {
+                tail = temp;
+            }
+        }
+    }
 }
