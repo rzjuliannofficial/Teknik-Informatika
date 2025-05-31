@@ -30,9 +30,9 @@ public class AntrianLinkedList17 {
             switch (pilihan) {
                 case 1:
                     System.out.println("=== Tambah Antrian ===");
-                    System.out.print("Masukkan NIM:");
+                    System.out.print("Masukkan NIM: ");
                     String nim = sc.nextLine();
-                    System.out.print("Masukkan Nama:");
+                    System.out.print("Masukkan Nama: ");
                     String nama = sc.nextLine();
                     System.out.print("Masukkan Prodi: ");
                     String prodi = sc.nextLine();
