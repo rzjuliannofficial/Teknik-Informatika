@@ -52,7 +52,7 @@ public class SingleLinkedList_QUEUE {
 
     public void dequeue_linkedList_removeFirst(){
         if (isEmpty()) {
-            System.out.println("Antrian kosong, tidak bisa menghapus data.");
+            System.out.println("Antrian kosong, tidak ada mahasiswa yang bisa dilayani.");
             return ;
         }
 
