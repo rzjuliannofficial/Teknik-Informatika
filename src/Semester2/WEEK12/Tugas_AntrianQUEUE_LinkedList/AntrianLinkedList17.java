@@ -41,7 +41,6 @@ public class AntrianLinkedList17 {
 
                     Mahasiswa17 mhs = new Mahasiswa17(nim, nama, prodi, kelas);
                     antrian.enqueue_linkedList_AddLast(mhs);
-                    System.out.println("Antrian berhasil atas nama "+mhs.nama+" ditambahkan: "  );
                     break;
                 case 2:
                     System.out.println("=== Layani Antrian ===");
