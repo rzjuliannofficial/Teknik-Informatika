@@ -6,7 +6,7 @@ public class AntrianLinkedList17 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("=== Program Antrian Mahasiswa ===");
-        System.out.println("Masukkan jumlah antrian: ");
+        System.out.print("Masukkan jumlah antrian: ");
         int jumlahAntrian = sc.nextInt();
         SingleLinkedList_QUEUE antrian = new SingleLinkedList_QUEUE(jumlahAntrian);
 
