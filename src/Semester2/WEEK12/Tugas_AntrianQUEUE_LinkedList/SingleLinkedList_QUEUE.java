@@ -48,6 +48,7 @@ public class SingleLinkedList_QUEUE {
             tail = nodeInput;
         }
         size++;
+        System.out.println("Antrian berhasil atas nama "+input.nama+" ditambahkan: "  );
     }
 
     public void dequeue_linkedList_removeFirst(){
@@ -63,7 +64,7 @@ public class SingleLinkedList_QUEUE {
         head.data.tampilkanData();
         System.out.println("===================================================================+");
         size--;
-        
+
         if (head == tail) {
             head = null;
             tail = null;
