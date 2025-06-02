@@ -33,15 +33,12 @@ public class DLLMain17 {
                     } else {
                         System.out.print("Masukkan NIM mahasiswa setelahnya: ");
                         String key = sc.nextLine();
+                        mhs = dll.inputData(sc);
                         dll.insertAfter(key, mhs);
                     }
                 }
                 case 4 -> {
-                    if (dll.isEmpty()) {
-                        System.out.println("Linked List kosong.");
-                    } else {
                         dll.print();
-                    }
                 }
                 case 0 -> System.out.println("Keluar dari program.");
                 default -> System.out.println("Pilihan tidak valid. Silakan coba lagi.");
