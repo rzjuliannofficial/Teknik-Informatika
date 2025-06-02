@@ -68,6 +68,10 @@ public class DoubleLinkedList17 {
     }
 
     public void print(){
+        if (isEmpty()) {
+            System.out.println("Linked list kosong");
+            return;
+        }
         Node17 current = head;
         System.out.println("================================================================+");
         System.out.println("Antrian mahasiswa terakhir :");
