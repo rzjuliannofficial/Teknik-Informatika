@@ -13,9 +13,15 @@ public class DLLMain17 {
             System.out.println("1. AddFirst Data Mahasiswa");
             System.out.println("2. AddLast Data Mahasiswa");
             System.out.println("3. Insert After Data Mahasiswa");
-            System.out.println("4. RemoveFirst Data Mahasiswa");
-            System.out.println("5. RemoveLast Data Mahasiswa");
-            System.out.println("6. Print Data Mahasiswa");
+            System.out.println("4. AddAt indeks Data Mahasiswa");
+            System.out.println("5. RemoveFirst Data Mahasiswa");
+            System.out.println("6. RemoveLast Data Mahasiswa");
+            System.out.println("7. RemoveAfter Data Mahasiswa");
+            System.out.println("8. RemoveAt indeks Data Mahasiswa");
+            System.out.println("9. GetFirst Data Mahasiswa");
+            System.out.println("10. GetLast Data Mahasiswa");
+            System.out.println("11. GetAt indeks Data Mahasiswa");
+            System.out.println("12. Print Data Mahasiswa");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = sc.nextInt();
@@ -39,15 +45,47 @@ public class DLLMain17 {
                         dll.insertAfter(key, mhs);
                     }
                 }
-                case 4 -> {
+                case 4-> {
+                    System.out.println("Masukkan indeks untuk menambahkan data mahasiswa: ");
+                    int indeks = sc.nextInt();
+                    sc.nextLine();
+                    mhs = dll.inputData(sc);
+                    dll.addAt(indeks, mhs);
+                }
+                case 5 -> {
                     System.out.println("Data mahasiswa pertama dengan nim "+dll.head.data.nim+" berhasil dihapus.");
                     dll.removeFirst();
                 }
-                case 5 -> {
+                case 6 -> {
                     System.out.println("Data mahasiswa pertama dengan nim "+dll.tail.data.nim+" berhasil dihapus."); 
                     dll.removeLast();
-                }   
-                case 6 -> {
+                }  
+                case 7 -> {
+                    System.out.println("Masukkan NIM mahasiswa yang akan dihapus setelahnya: ");
+                    String key = sc.nextLine();
+                    dll.removeAfter(key);
+                }
+                case 8-> {
+                    System.out.println("Masukkan indeks untuk menghapus data mahasiswa: ");
+                    int indeks = sc.nextInt();
+                    sc.nextLine(); 
+                    dll.removeAt(indeks);
+                }
+                case 9 -> {
+                    System.out.println("Data mahasiswa pertama: ");
+                    dll.getFirst();
+                }
+                case 10 -> {
+                    System.out.println("Data mahasiswa terakhir: ");
+                    dll.getLast();
+                }
+                case 11 -> {
+                    System.out.println("Masukkan indeks untuk mendapatkan data mahasiswa: ");
+                    int indeks = sc.nextInt();
+                    sc.nextLine();
+                    dll.getAt(indeks);
+                }
+                case 12 -> {
                     dll.print();
                 }
                 case 0 -> System.out.println("Keluar dari program.");
