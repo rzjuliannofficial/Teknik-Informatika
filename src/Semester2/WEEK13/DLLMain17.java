@@ -13,7 +13,9 @@ public class DLLMain17 {
             System.out.println("1. AddFirst Data Mahasiswa");
             System.out.println("2. AddLast Data Mahasiswa");
             System.out.println("3. Insert After Data Mahasiswa");
-            System.out.println("4. Print Data Mahasiswa");
+            System.out.println("4. RemoveFirst Data Mahasiswa");
+            System.out.println("5. RemoveLast Data Mahasiswa");
+            System.out.println("6. Print Data Mahasiswa");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = sc.nextInt();
@@ -38,7 +40,15 @@ public class DLLMain17 {
                     }
                 }
                 case 4 -> {
-                        dll.print();
+                    System.out.println("Data mahasiswa pertama dengan nim "+dll.head.data.nim+" berhasil dihapus.");
+                    dll.removeFirst();
+                }
+                case 5 -> {
+                    System.out.println("Data mahasiswa pertama dengan nim "+dll.tail.data.nim+" berhasil dihapus."); 
+                    dll.removeLast();
+                }   
+                case 6 -> {
+                    dll.print();
                 }
                 case 0 -> System.out.println("Keluar dari program.");
                 default -> System.out.println("Pilihan tidak valid. Silakan coba lagi.");
