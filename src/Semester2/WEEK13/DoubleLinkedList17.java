@@ -74,7 +74,7 @@ public class DoubleLinkedList17 {
         }
         Node17 current = head;
         System.out.println("================================================================+");
-        System.out.println("Antrian mahasiswa terakhir :");
+        System.out.println("Antrian mahasiswa:");
         System.out.println("================================================================+");
         System.out.printf("|%-15s|%-15s|%-15s|%-15s|%n","Nim","Nama","Prodi","Ipk");
         System.out.println("================================================================+");
@@ -96,5 +96,33 @@ public class DoubleLinkedList17 {
         Double ipk = sc.nextDouble();
         return new Mahasiswa17(nim, nama, prodi, ipk);
         //akan mengembalikan objek Mahasiswa17 yang baru dibuat
+    }
+
+    public void removeFirst(){
+        if (isEmpty()){
+            System.out.println("Linked list kosong, tidak ada yang bisa dihapus.");
+            return;
+        }
+
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
+        }
+    }
+
+    public void removeLast(){
+        if (isEmpty()){
+            System.out.println("Linked list kosong, tidak ada yang bisa dihapus.");
+            return;
+        }
+
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+        }
     }
 }
