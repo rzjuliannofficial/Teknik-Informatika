@@ -6,6 +6,7 @@ public class sepeda_Demo {
         // buat dua buah objek sepeda
         sepeda spd1 = new sepeda();
         sepeda spd2 = new sepeda();
+        sepedaGunung spd3 = new sepedaGunung();
 
         // panggil method didalam objek sepeda
         spd1.setMerek("Polygone");
@@ -20,5 +21,14 @@ public class sepeda_Demo {
         spd2.tambahKecepatan(10);
         spd2.gantiGear(3);
         spd2.cetakStatus();
+        System.out.println();
+        
+        spd3.setMerek("Klinee");
+        spd3.tambahKecepatan(5);
+        spd3.gantiGear(7);
+        spd3.setTipeSuspensi("Gas suspension");
+        spd3.cetakStatus();
     }
 }
+
+
