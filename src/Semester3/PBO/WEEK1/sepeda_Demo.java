@@ -1,7 +1,5 @@
 package Semester3.PBO.WEEK1;
 
-import WEEK9.TUGAS.piramid17_int;
-
 public class sepeda_Demo {
     public static void main(String[] args) {
         
