@@ -3,6 +3,8 @@ public class Tugas_Demo {
         alasKaki alasKaki1 = new alasKaki();
         alasKaki alasKaki2 = new alasKaki();
         sepatuLari alasKaki3 = new sepatuLari();
+        botol botol1 = new botol();
+        botol botol2 = new botol();
 
         alasKaki1.setTipe("sandal");
         alasKaki1.setWarna("hitam");
@@ -27,5 +29,20 @@ public class Tugas_Demo {
         alasKaki3.gantiWarna("-");
         alasKaki3.tipeSol("Carbon");
         alasKaki3.cetak();
+        System.out.println();
+
+        botol1.setTipe("Plastik");
+        botol1.setKapasitas(1000);
+        botol1.isi(500);
+        botol1.SNI(false);
+        botol1.cetak();
+        System.out.println();
+
+        botol2.setTipe("Termos");
+        botol2.setKapasitas(1000);
+        botol2.isi(500);
+        botol2.SNI(true);
+        botol2.cetak();
+        System.out.println();
     }
 }
