@@ -6,4 +6,8 @@ public class Barang19 {
     public double hargaDasar;
     public float diskon; // Diskon dalam persen
 
+    public double hitungHargaJual() {
+        double diskonAmount = hargaDasar * (diskon / 100);
+        return hargaDasar - diskonAmount;
+    }
 }
