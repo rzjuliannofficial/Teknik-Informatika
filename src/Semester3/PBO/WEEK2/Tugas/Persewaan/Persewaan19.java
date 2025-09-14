@@ -8,4 +8,8 @@ public class Persewaan19 {
     int harga;
     int totalHarga;
 
+    public int hitungTotalHarga(){
+        totalHarga = harga * lamaSewa;
+        return totalHarga;
+    }
 }
