@@ -1,6 +1,6 @@
 package Semester3.PBO.WEEK2;
 
-public class Mahasiswa {
+public class Mahasiswa19 {
 
     public int nim;
     public String nama; 
