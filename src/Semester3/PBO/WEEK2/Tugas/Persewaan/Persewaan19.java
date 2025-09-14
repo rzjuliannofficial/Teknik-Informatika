@@ -8,11 +8,10 @@ public class Persewaan19 {
     int harga;
     int totalHarga;
 
-    public int hitungTotalHarga(){
+    public void hitungTotalHarga(){
         totalHarga = harga * lamaSewa;
-        return totalHarga;
     }
-    
+
     public void tampilData(){
         System.out.println("ID Sewa: " + idSewa);
         System.out.println("Nama Member: " + namaMember);
