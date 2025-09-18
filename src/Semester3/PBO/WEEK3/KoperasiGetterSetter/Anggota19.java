@@ -5,7 +5,7 @@ public class Anggota19 {
     private String alamat;
     private float simpanan;
 
-    public void setName(String nama){
+    public void setNama(String nama){
         this.nama = nama;
     }
 
