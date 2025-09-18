@@ -1,9 +1,14 @@
 package Semester3.PBO.WEEK3.MotorEncapulation;
 
 public class Motor19 {
-    public int kecepetan = 0; 
-    public boolean kontakOn = false;
+    private int kecepetan = 0; 
+    private boolean kontakOn = false;
 
+
+    public void matikanMesin(){
+        kontakOn = false;
+    }
+    
     public void printStatus(){
         if (kontakOn == true) {
             System.out.println("Kontak On");
