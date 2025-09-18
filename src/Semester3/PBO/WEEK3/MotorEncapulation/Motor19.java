@@ -4,11 +4,15 @@ public class Motor19 {
     private int kecepetan = 0; 
     private boolean kontakOn = false;
 
-
-    public void matikanMesin(){
-        kontakOn = false;
+    public void nyalakanMesin(){
+        kontakOn = true;
     }
     
+    public void matikanMesin(){
+        kontakOn = false;
+        kecepetan = 0;
+    }
+
     public void printStatus(){
         if (kontakOn == true) {
             System.out.println("Kontak On");
