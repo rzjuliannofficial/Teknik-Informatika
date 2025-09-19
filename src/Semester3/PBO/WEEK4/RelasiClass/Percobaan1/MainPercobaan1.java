@@ -6,5 +6,15 @@ public class MainPercobaan1 {
         Laptop19 laptop = new Laptop19("Asus", proc);
 
         laptop.info();
+        
+        Processor19 proc1 = new Processor19();
+        proc1.setMerk("Intel i5");
+        proc1.setCache(4);
+        
+        Laptop19 laptop1 = new Laptop19();
+        laptop1.setMerk("Thinkpad");
+        laptop1.setProc(proc1);
+        laptop1.info();
+
     }
 }
