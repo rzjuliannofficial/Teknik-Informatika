@@ -4,6 +4,8 @@ public class Processor19 {
     private String merk;
     private double cache;
 
+    Processor19(){}
+    
     Processor19(String merk , double cache){
         this.merk = merk;
         this.cache = cache;
