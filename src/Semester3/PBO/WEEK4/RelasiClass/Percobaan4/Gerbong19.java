@@ -24,7 +24,15 @@ public class Gerbong19 {
     }
 
     public void setPenumpang(Penumpang19 penumpang, int nomor) {
-        this.arrayKursi[nomor - 1].setPenumpang(penumpang);
+        if (arrayKursi[nomor-1].getPenumpang()!= null) {
+            System.out.println("Maaf Kursi nomor "+ nomor +" sudah ditempati!");
+        }else {
+            this.arrayKursi[nomor - 1].setPenumpang(penumpang);
+        }
+    }
+    
+    public Kursi19[] getArrayKursi() {
+        return arrayKursi;
     }
 
     public String info() {
@@ -35,9 +43,4 @@ public class Gerbong19 {
         }
         return info;
     }
-
-    public Kursi19[] getArrayKursi() {
-        return arrayKursi;
-    }
-
 }
