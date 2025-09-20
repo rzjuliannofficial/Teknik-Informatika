@@ -4,7 +4,7 @@ public class Penumpang19 {
     private String ktp;
     private String nama;
     
-    Penumpang19(String ktp , String nama){
+    public Penumpang19(String ktp , String nama){
         this.ktp = ktp;
         this.nama = nama;
     }

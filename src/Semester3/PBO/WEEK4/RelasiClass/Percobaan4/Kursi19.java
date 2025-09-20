@@ -4,7 +4,7 @@ public class Kursi19 {
     private String nomor;
     private Penumpang19 penumpang;
 
-    Kursi19(String nomor){
+    public Kursi19(String nomor){
         this.nomor = nomor;
     }
 
