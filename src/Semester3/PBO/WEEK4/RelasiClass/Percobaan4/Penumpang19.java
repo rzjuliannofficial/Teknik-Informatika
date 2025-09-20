@@ -1,8 +1,8 @@
 package Semester3.PBO.WEEK4.RelasiClass.Percobaan4;
 
 public class Penumpang19 {
-    String ktp;
-    String nama;
+    private String ktp;
+    private String nama;
     
     Penumpang19(String ktp , String nama){
         this.ktp = ktp;

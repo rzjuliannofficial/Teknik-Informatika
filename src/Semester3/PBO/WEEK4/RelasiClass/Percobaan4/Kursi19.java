@@ -1,8 +1,8 @@
 package Semester3.PBO.WEEK4.RelasiClass.Percobaan4;
 
 public class Kursi19 {
-    String nomor;
-    Penumpang19 penumpang;
+    private String nomor;
+    private Penumpang19 penumpang;
 
     Kursi19(String nomor){
         this.nomor = nomor;
