@@ -9,6 +9,5 @@ public class MainPercobaan1 {
         hitung.getNilai();
         hitung.getNilaiZ();
         hitung.getJumlah();
-
     }
 }
