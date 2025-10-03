@@ -1,8 +1,8 @@
 package Semester3.PBO.WEEK6.Percobaan2;
 
 public class ClassA {
-    private int x;
-    private int y;
+    protected int x;
+    protected int y;
 
     public void setX(int x){
         this.x = x;
