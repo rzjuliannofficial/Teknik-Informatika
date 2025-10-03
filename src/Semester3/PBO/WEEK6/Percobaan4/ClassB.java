@@ -1,5 +1,7 @@
 package Semester3.PBO.WEEK6.Percobaan4;
 
-public class ClassB {
-    
+public class ClassB extends ClassA {
+    ClassB(){
+        System.out.println("konstruktor B dijalankan");
+    }
 }
