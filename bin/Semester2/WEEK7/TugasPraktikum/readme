@@ -1,0 +1,10 @@
+Pada week3 dan 6 yang terdapat 3+1 class yaitu
+Dosen<no presensi>, DataDosen<no presensi> , dan DosenDemo<no presensi>, dan tambahan sorting dari week6
+
+Disini tambahkan method:
+a. PencarianDataSequential<no presensi> : digunakan untuk mencari data dosen berdasarkan
+nama dengan algoritma sequential search.
+b. PencarianDataBinary<no presensi> : digunakan untuk mencari data dosen berdasarkan usia
+dengan algoritma Binary Search.
+c. Buat aturan untuk mendeteksi hasil pencarian lebih dari 1 hasil dalam bentuk kalimat
+peringatan! Pastikan algoritma yang diterapkan sesuai dengan kasus yang diberikan!
